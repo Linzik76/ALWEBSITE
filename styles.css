@@ -1,7 +1,8 @@
 /* ============================================
-   APPRENTICELINKS - REDESIGNED STYLES
-   Navy: #0f1a2e (primary) → #1a2f4a (gradient)
-   Orange: #e8704a (accent)
+   APPRENTICELINKS - NAVY & ORANGE REDESIGN
+   Navy: #0f1a2e → #1a2f4a (gradients)
+   Orange: #e8704a (accents)
+   Text: White (#ffffff)
    ============================================ */
 
 * {
@@ -12,8 +13,10 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-  color: #333;
+  background: linear-gradient(180deg, #0f1a2e 0%, #1a2f4a 100%);
+  color: #ffffff;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 /* ============================================
@@ -23,13 +26,14 @@ body {
 header {
   background: linear-gradient(135deg, #0f1a2e 0%, #1a2f4a 100%);
   padding: 20px 40px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 2px solid #e8704a;
 }
 
 .logo {
@@ -48,12 +52,13 @@ nav a {
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
-  transition: color 0.3s;
+  transition: all 0.3s;
   font-weight: 500;
 }
 
 nav a:hover {
   color: #e8704a;
+  text-shadow: 0 0 8px rgba(232, 112, 74, 0.3);
 }
 
 /* ============================================
@@ -61,18 +66,33 @@ nav a:hover {
    ============================================ */
 
 .hero {
-  background: linear-gradient(135deg, #0f1a2e 0%, #1a3a52 50%, #1a2f4a 100%);
+  background: linear-gradient(135deg, #0f1a2e 0%, #1a3a52 50%, #2a1f4a 100%);
   min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, rgba(232, 112, 74, 0.05) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .hero-content {
   max-width: 900px;
   animation: fadeIn 0.8s ease-in;
+  position: relative;
+  z-index: 1;
 }
 
 @keyframes fadeIn {
@@ -102,13 +122,14 @@ h1 {
   color: #ffffff;
   margin-bottom: 24px;
   font-family: 'Georgia', 'Garamond', serif;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .subtitle {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
-  color: #f5f5f5;
+  color: #e8e8e8;
   margin-bottom: 48px;
   max-width: 700px;
   margin-left: auto;
@@ -141,21 +162,22 @@ button {
   text-decoration: none;
   display: inline-block;
   min-width: 280px;
-  background: #e8704a;
+  background: linear-gradient(135deg, #e8704a 0%, #f07c52 100%);
   color: #ffffff;
+  box-shadow: 0 4px 12px rgba(232, 112, 74, 0.3);
 }
 
 .btn:hover,
 button:hover {
-  background: #f07c52;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(232, 112, 74, 0.4);
+  background: linear-gradient(135deg, #f07c52 0%, #f58a60 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(232, 112, 74, 0.5);
 }
 
 .btn:active,
 button:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(232, 112, 74, 0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(232, 112, 74, 0.3);
 }
 
 /* ============================================
@@ -163,15 +185,18 @@ button:active {
    ============================================ */
 
 .features {
-  background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);
+  background: linear-gradient(180deg, #1a2f4a 0%, #0f1a2e 100%);
   padding: 80px 40px;
+  border-top: 2px solid #2a4a6a;
+  border-bottom: 2px solid #2a4a6a;
 }
 
 .features h2 {
   text-align: center;
   font-size: 36px;
-  color: #0f1a2e;
+  color: #ffffff;
   margin-bottom: 60px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .feature-grid {
@@ -184,6 +209,17 @@ button:active {
 
 .feature {
   text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(26, 47, 74, 0.5);
+  border: 1px solid rgba(232, 112, 74, 0.2);
+  transition: all 0.3s;
+}
+
+.feature:hover {
+  background: rgba(26, 47, 74, 0.8);
+  border-color: rgba(232, 112, 74, 0.5);
+  box-shadow: 0 4px 16px rgba(232, 112, 74, 0.15);
 }
 
 .feature-icon {
@@ -193,12 +229,12 @@ button:active {
 
 .feature h3 {
   font-size: 20px;
-  color: #0f1a2e;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
 .feature p {
-  color: #555;
+  color: #d0d0d0;
   line-height: 1.6;
 }
 
@@ -214,43 +250,63 @@ button:active {
 
 .section h2 {
   font-size: 32px;
-  color: #0f1a2e;
+  color: #ffffff;
   margin-bottom: 30px;
   border-bottom: 3px solid #e8704a;
   padding-bottom: 15px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .section h3 {
   font-size: 22px;
-  color: #0f1a2e;
+  color: #ffffff;
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
 .card {
-  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #1a2f4a 0%, #0f1a2e 100%);
   padding: 30px;
   border-radius: 8px;
   border-left: 4px solid #e8704a;
   margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(15, 26, 46, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(232, 112, 74, 0.2);
+  transition: all 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(232, 112, 74, 0.2);
+  border-color: rgba(232, 112, 74, 0.4);
 }
 
 .card h3 {
-  color: #0f1a2e;
+  color: #ffffff;
 }
 
 .card p {
-  color: #333;
+  color: #e8e8e8;
 }
 
 .card a {
   color: #e8704a;
   font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
 .card a:hover {
+  color: #f07c52;
   text-decoration: underline;
+  text-shadow: 0 0 8px rgba(232, 112, 74, 0.3);
+}
+
+.card ul {
+  color: #e8e8e8;
+}
+
+.card li {
+  margin-bottom: 8px;
 }
 
 /* ============================================
@@ -264,7 +320,7 @@ button:active {
 label {
   display: block;
   font-weight: 600;
-  color: #0f1a2e;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 
@@ -276,12 +332,13 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ddd;
+  border: 1px solid #3a5a7a;
   border-radius: 4px;
   font-size: 16px;
   font-family: inherit;
-  background: #ffffff;
-  color: #333;
+  background: rgba(10, 20, 35, 0.6);
+  color: #ffffff;
+  transition: all 0.3s;
 }
 
 input[type="text"]:focus,
@@ -292,7 +349,8 @@ select:focus,
 textarea:focus {
   outline: none;
   border-color: #e8704a;
-  box-shadow: 0 0 0 3px rgba(232, 112, 74, 0.1);
+  background: rgba(10, 20, 35, 0.9);
+  box-shadow: 0 0 0 3px rgba(232, 112, 74, 0.2);
 }
 
 /* ============================================
@@ -307,11 +365,12 @@ textarea:focus {
 }
 
 .dashboard-card {
-  background: linear-gradient(135deg, #0f1a2e 0%, #1a2f4a 100%);
+  background: linear-gradient(135deg, #1a2f4a 0%, #0f1a2e 100%);
   padding: 30px;
   border-radius: 8px;
   color: #ffffff;
-  box-shadow: 0 4px 12px rgba(15, 26, 46, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(232, 112, 74, 0.2);
 }
 
 .dashboard-card h3 {
@@ -320,7 +379,7 @@ textarea:focus {
 }
 
 .dashboard-card p {
-  color: #f5f5f5;
+  color: #e8e8e8;
 }
 
 .dashboard-card .stat {
@@ -328,11 +387,12 @@ textarea:focus {
   font-weight: bold;
   color: #e8704a;
   margin: 15px 0 5px 0;
+  text-shadow: 0 0 8px rgba(232, 112, 74, 0.2);
 }
 
 .dashboard-card .label {
   font-size: 13px;
-  color: #b0b0b0;
+  color: #a0b0c0;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -349,18 +409,19 @@ textarea:focus {
 }
 
 .module-card {
-  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #1a2f4a 0%, #0f1a2e 100%);
   padding: 20px;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s;
-  border: 2px solid transparent;
-  box-shadow: 0 2px 6px rgba(15, 26, 46, 0.08);
+  border: 2px solid rgba(232, 112, 74, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .module-card:hover {
   border-color: #e8704a;
-  box-shadow: 0 4px 12px rgba(232, 112, 74, 0.2);
+  box-shadow: 0 4px 16px rgba(232, 112, 74, 0.3);
+  background: linear-gradient(135deg, #2a3f5a 0%, #1a2f4a 100%);
 }
 
 .module-card .icon {
@@ -369,25 +430,26 @@ textarea:focus {
 }
 
 .module-card h4 {
-  color: #0f1a2e;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 
 .module-card p {
   font-size: 13px;
-  color: #777;
+  color: #b0c0d0;
 }
 
 .progress-bar {
-  background: #ddd;
+  background: rgba(255, 255, 255, 0.1);
   height: 8px;
   border-radius: 4px;
   margin-top: 10px;
   overflow: hidden;
+  border: 1px solid rgba(232, 112, 74, 0.2);
 }
 
 .progress-fill {
-  background: #e8704a;
+  background: linear-gradient(90deg, #e8704a 0%, #f07c52 100%);
   height: 100%;
   transition: width 0.3s;
 }
@@ -406,7 +468,7 @@ footer {
 }
 
 footer p {
-  color: #f5f5f5;
+  color: #e8e8e8;
 }
 
 /* ============================================
