@@ -1799,7 +1799,7 @@ footer p {
 }
 
 .price-card h3 {
-  font-size: 20px;
+  font-size: 26px;
   color: #0f1a2e;
 }
 
@@ -1817,7 +1817,7 @@ footer p {
 
 .price-desc {
   color: #5a6475;
-  margin-bottom: 22px;
+  margin: 6px 0 22px;
 }
 
 .price-card .btn {
