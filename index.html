@@ -3,78 +3,669 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ApprenticeLinks - Ireland's leading AI-powered apprenticeship matching platform">
-  <title>ApprenticeLinks - Match Potential to Opportunity</title>
+  <meta name="description" content="ApprenticeLinks - Ireland's apprenticeship matching platform. Find your apprenticeship, matched to you, not just your CV.">
+  <title>ApprenticeLinks - Find Your Apprenticeship in Ireland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- ================= HEADER ================= -->
   <header>
-    <div class="logo">🎓 ApprenticeLinks</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="for-candidates.html">For Candidates</a>
-      <a href="for-employers.html">For Employers</a>
-      <a href="for-colleges.html">For Colleges</a>
-      <a href="how-it-works.html">How It Works</a>
-      <a href="readiness-programme.html">Readiness Programme</a>
-      <a href="why-hire-apprentices.html">Why Hire Apprentices</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
-    </nav>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo" aria-label="ApprenticeLinks home">
+        <span class="logo-mark" aria-hidden="true">🎓</span>
+        <span>Apprentice<span class="accent">Links</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav class="main-nav" id="main-nav">
+        <a href="for-candidates.html">Candidates</a>
+        <a href="for-employers.html">Employers</a>
+        <a href="for-colleges.html">Colleges</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="#quiz" class="btn btn-orange btn-sm">Get Started</a>
+      </nav>
+    </div>
   </header>
 
+  <!-- ================= HERO ================= -->
   <section class="hero">
-    <div class="hero-content">
-      <p class="domain">apprenticelinks.ie</p>
-      <h1>Match Potential to Opportunity</h1>
-      <p class="subtitle">We don't just connect people to jobs. We connect potential to opportunity. Using intelligent matching, candidate preparation, and employer partnerships, we're building Ireland's leading apprenticeship platform.</p>
-      
+    <div class="container hero-grid">
+      <div>
+        <p class="domain-pill">apprenticelink.ie</p>
+        <h1>Find your apprenticeship, matched to <span class="hl">you</span>, not just your CV.</h1>
+        <p class="subtitle">ApprenticeLinks matches you to apprenticeships across Ireland based on your skills, interests and goals, then gets you ready for day one. It's free for candidates, and employers get pre-screened, work-ready apprentices.</p>
+        <div class="button-container">
+          <a href="#quiz" class="btn btn-orange">I'm looking for an apprenticeship →</a>
+          <a href="for-employers.html" class="btn btn-red">I am hiring an apprentice</a>
+        </div>
+        <p class="hero-note">Not sure where to start? <a href="#quiz">Take the 2-minute match quiz</a></p>
+      </div>
+
+      <div class="hero-card" aria-label="Example of matched apprenticeships">
+        <h4>Your top matches</h4>
+        <p class="small">Based on your ApprenticeLinks profile (example)</p>
+        <div class="match-row">
+          <div><div class="role">⚡ Electrical Apprentice</div><div class="meta">Craft · NFQ Level 6 · Cork</div></div>
+          <div class="score">94%</div>
+        </div>
+        <div class="match-row">
+          <div><div class="role">🔧 Maintenance Fitter</div><div class="meta">Craft · NFQ Level 6 · Limerick</div></div>
+          <div class="score">88%</div>
+        </div>
+        <div class="match-row">
+          <div><div class="role">🏭 Manufacturing Technician</div><div class="meta">NFQ Level 6 · Galway</div></div>
+          <div class="score">81%</div>
+        </div>
+        <span class="badge-float">✓ Readiness Programme 80% complete</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS ================= -->
+  <div class="stats">
+    <div class="container stats-grid">
+      <div class="stat"><div class="num">70+</div><div class="label">National apprenticeship programmes</div></div>
+      <div class="stat"><div class="num">NFQ 5–10</div><div class="label">From craft trades to degree level</div></div>
+      <div class="stat"><div class="num">26</div><div class="label">Counties covered</div></div>
+      <div class="stat"><div class="num">€0</div><div class="label">Cost to candidates, always</div></div>
+    </div>
+  </div>
+
+  <!-- ================= HOW IT WORKS ================= -->
+  <section id="how-it-works">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>From "what do I do next?" to your first day on the job</h2>
+        <p>Four simple steps. We're with you the whole way.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Build your profile</h3>
+          <p>Tell us what you enjoy, what you're good at and where you want to work. It takes about 5 minutes.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Get ready</h3>
+          <p>Short Readiness Programme modules cover CVs, interviews and workplace skills, so you stand out.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Get matched</h3>
+          <p>Our smart matching puts you in front of employers whose roles really fit you.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Start & grow</h3>
+          <p>Earn while you learn, with mentor support right through to your qualification.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY (orange gradient boxes) ================= -->
+  <section class="why">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Why ApprenticeLinks</span>
+        <h2>More than a jobs board</h2>
+        <p>We connect potential to opportunity, and we back it up with preparation and support.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature">
+          <div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
+          <h3>Smart Matching</h3>
+          <p>We match on skills, interests, personality and career goals, not just what's on your CV.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <h3>Readiness Programme</h3>
+          <p>Bite-sized modules on CVs, interviews and workplace skills, so you're confident on day one.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>Mentor Support</h3>
+          <p>A real person in your corner throughout your apprenticeship, not just until you're hired.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+          <h3>Employer Partnerships</h3>
+          <p>We work directly with employers across Ireland to open up apprenticeships you won't find elsewhere.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+          <h3>Career Pathways</h3>
+          <p>Progress from craft trades right up to degree-level apprenticeships at NFQ Levels 5 to 10.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <h3>Earn While You Learn</h3>
+          <p>Get paid from day one while you gain a nationally recognised qualification.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AUDIENCES ================= -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Who it's for</span>
+        <h2>Built for everyone in the apprenticeship journey</h2>
+      </div>
+      <div class="audience-grid">
+        <div class="aud aud-candidates" id="candidates">
+          <span class="tag">Candidates</span>
+          <h3>Earn while you learn</h3>
+          <p>Whether you've just finished your Leaving Cert or you're changing career, there's an apprenticeship for you.</p>
+          <ul>
+            <li>Free, always</li>
+            <li>Matches based on who you are</li>
+            <li>Interview & CV coaching</li>
+            <li>A mentor throughout</li>
+          </ul>
+          <a href="#quiz" class="btn btn-orange">Find my match</a>
+        </div>
+        <div class="aud aud-employers" id="employers">
+          <span class="tag">Employers</span>
+          <h3>Hire work-ready apprentices</h3>
+          <p>Shortlists of pre-screened candidates who fit your role, your team and your culture.</p>
+          <ul>
+            <li>Faster time-to-hire</li>
+            <li>Candidates already through the Readiness Programme</li>
+            <li>Help with Apprenticeship Employer Grants</li>
+            <li>Retention tracking & support</li>
+          </ul>
+          <a href="for-employers.html" class="btn btn-red">I am hiring an apprentice</a>
+        </div>
+        <div class="aud aud-colleges" id="colleges">
+          <span class="tag">Colleges & ETBs</span>
+          <h3>Place more learners</h3>
+          <p>Connect your learners with employers and see their progress in one place.</p>
+          <ul>
+            <li>Direct employer pipeline</li>
+            <li>Learner progress dashboards</li>
+            <li>Outcome reporting</li>
+            <li>Joint readiness workshops</li>
+          </ul>
+          <a href="for-colleges.html" class="btn btn-ghost">Partner with us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QUIZ ================= -->
+  <section class="quiz-section" id="quiz">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Try it now</span>
+        <h2>Find your apprenticeship match in 2 minutes</h2>
+        <p>Answer 6 quick questions and see the kinds of apprenticeships ApprenticeLinks would match you with.</p>
+      </div>
+
+      <div class="quiz-card" aria-live="polite">
+        <div id="quiz-body">
+          <div class="progress-wrap">
+            <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0" id="progress"><div class="progress-bar" id="progress-bar"></div></div>
+            <span class="progress-label" id="progress-label">Question 1 of 6</span>
+          </div>
+          <h3 class="q-title" id="q-title"></h3>
+          <div class="options" id="options"></div>
+          <div class="quiz-nav">
+            <button class="link-btn" id="back-btn" disabled>← Back</button>
+          </div>
+        </div>
+
+        <div class="results" id="results" hidden>
+          <h3>🎉 Your top apprenticeship matches</h3>
+          <p class="intro" id="results-intro"></p>
+          <div id="result-list"></div>
+          <div class="next-box">
+            <h4>What happens next on ApprenticeLinks</h4>
+            <ol>
+              <li>Create your free profile. Your quiz answers are carried over.</li>
+              <li>Complete the Readiness Programme modules recommended for you.</li>
+              <li>Get introduced to employers hiring for these roles near you.</li>
+            </ol>
+          </div>
+          <div class="actions">
+            <a href="for-candidates.html" class="btn btn-orange">Create my free profile</a>
+            <button class="btn btn-ghost" id="restart-btn">Take the quiz again</button>
+          </div>
+        </div>
+      </div>
+      <p class="demo-note">This is a sample questionnaire. The full ApprenticeLinks profile goes deeper into your skills, personality and goals.</p>
+    </div>
+  </section>
+
+  <!-- ================= SYSTEM DEMO ================= -->
+  <section class="demo" id="demo">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">See the platform</span>
+        <h2>What ApprenticeLinks looks like inside</h2>
+        <p>One platform for candidates, employers and colleges. Switch views to explore.</p>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" aria-selected="true" aria-controls="view-candidate" id="tab-candidate">🎓 Candidate view</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="view-employer" id="tab-employer">💼 Employer view</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="view-college" id="tab-college">🏫 College view</button>
+      </div>
+
+      <div class="browser">
+        <div class="browser-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="url" id="demo-url">app.apprenticelink.ie/candidate/dashboard</span>
+        </div>
+        <div class="app">
+          <aside class="sidebar">
+            <div class="logo"><span class="logo-mark" aria-hidden="true">🎓</span><span>Apprentice<span class="accent">Links</span></span></div>
+            <div id="side-candidate">
+              <span class="side-link active">Dashboard</span>
+              <span class="side-link">My Matches</span>
+              <span class="side-link">Readiness Programme</span>
+              <span class="side-link">Interviews</span>
+              <span class="side-link">My Mentor</span>
+            </div>
+            <div id="side-employer" hidden>
+              <span class="side-link active">Hiring Overview</span>
+              <span class="side-link">Roles</span>
+              <span class="side-link">Shortlists</span>
+              <span class="side-link">Interviews</span>
+              <span class="side-link">Grants</span>
+            </div>
+            <div id="side-college" hidden>
+              <span class="side-link active">Learner Outcomes</span>
+              <span class="side-link">Learners</span>
+              <span class="side-link">Employers</span>
+              <span class="side-link">Reports</span>
+            </div>
+          </aside>
+
+          <div class="app-main">
+            <!-- Candidate view -->
+            <div id="view-candidate" role="tabpanel" aria-labelledby="tab-candidate">
+              <div class="app-top">
+                <div>
+                  <h3>Welcome back, Sam 👋</h3>
+                  <div class="sub">You have 2 new matches and 1 interview this week.</div>
+                </div>
+                <div class="avatar">SM</div>
+              </div>
+              <div class="kpis">
+                <div class="kpi"><div class="k-label">Profile strength</div><div class="k-val">92%</div><div class="k-delta">▲ 12% this week</div></div>
+                <div class="kpi"><div class="k-label">Active matches</div><div class="k-val">7</div><div class="k-delta">▲ 2 new</div></div>
+                <div class="kpi"><div class="k-label">Applications</div><div class="k-val">3</div><div class="k-delta">1 shortlisted</div></div>
+                <div class="kpi"><div class="k-label">Interviews</div><div class="k-val">1</div><div class="k-delta">Thu, 10:30</div></div>
+              </div>
+              <div class="panels">
+                <div class="panel">
+                  <h4>Your top matches</h4>
+                  <div class="table-wrap">
+                    <table>
+                      <thead><tr><th>Role</th><th>Match</th><th>Status</th></tr></thead>
+                      <tbody>
+                        <tr><td><strong>Electrical Apprentice</strong><br><small>Cork · Craft L6</small></td><td class="mini-score">94%</td><td><span class="chip green">Interview booked</span></td></tr>
+                        <tr><td><strong>Maintenance Fitter</strong><br><small>Limerick · Craft L6</small></td><td class="mini-score">88%</td><td><span class="chip blue">Applied</span></td></tr>
+                        <tr><td><strong>Manufacturing Technician</strong><br><small>Galway · L6</small></td><td class="mini-score">81%</td><td><span class="chip orange">New match</span></td></tr>
+                        <tr><td><strong>Engineering Technician</strong><br><small>Cork · L6</small></td><td class="mini-score">77%</td><td><span class="chip orange">New match</span></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="panel">
+                  <h4>Readiness Programme</h4>
+                  <div class="bar-row"><div class="lbl"><span>CV Builder</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+                  <div class="bar-row"><div class="lbl"><span>Interview Skills</span><span>60%</span></div><div class="bar"><span style="width:60%"></span></div></div>
+                  <div class="bar-row"><div class="lbl"><span>Workplace Basics</span><span>80%</span></div><div class="bar"><span style="width:80%"></span></div></div>
+                  <div class="bar-row"><div class="lbl"><span>Health & Safety</span><span>40%</span></div><div class="bar"><span style="width:40%"></span></div></div>
+                  <p style="font-size:0.85rem;color:var(--muted);margin-top:8px;">💡 Next up: "Answering tricky interview questions" (10 min)</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Employer view -->
+            <div id="view-employer" role="tabpanel" aria-labelledby="tab-employer" hidden>
+              <div class="app-top">
+                <div>
+                  <h3>Electrical Apprentice, Cork</h3>
+                  <div class="sub">Role open 9 days · 3 positions</div>
+                </div>
+                <span class="chip red">2 interviews to schedule</span>
+              </div>
+              <div class="kpis">
+                <div class="kpi"><div class="k-label">Matched candidates</div><div class="k-val">38</div><div class="k-delta">▲ 6 today</div></div>
+                <div class="kpi"><div class="k-label">Shortlisted</div><div class="k-val">8</div><div class="k-delta">Match 85%+</div></div>
+                <div class="kpi"><div class="k-label">Interviews</div><div class="k-val">4</div><div class="k-delta">2 this week</div></div>
+                <div class="kpi"><div class="k-label">Avg. readiness</div><div class="k-val">87%</div><div class="k-delta">Top quartile</div></div>
+              </div>
+              <div class="panels">
+                <div class="panel">
+                  <h4>Your shortlist</h4>
+                  <div class="table-wrap">
+                    <table>
+                      <thead><tr><th>Candidate</th><th>Match</th><th>Readiness</th><th></th></tr></thead>
+                      <tbody>
+                        <tr><td><strong>Candidate #1042</strong><br><small>Leaving Cert · Cork</small></td><td class="mini-score">94%</td><td><span class="chip green">Ready</span></td><td><button class="mini-btn">Invite</button></td></tr>
+                        <tr><td><strong>Candidate #0987</strong><br><small>QQI L5 · Kerry</small></td><td class="mini-score">91%</td><td><span class="chip green">Ready</span></td><td><button class="mini-btn">Invite</button></td></tr>
+                        <tr><td><strong>Candidate #1120</strong><br><small>LCA · Cork</small></td><td class="mini-score">89%</td><td><span class="chip orange">In progress</span></td><td><button class="mini-btn">View</button></td></tr>
+                        <tr><td><strong>Candidate #1003</strong><br><small>Career changer · Waterford</small></td><td class="mini-score">86%</td><td><span class="chip green">Ready</span></td><td><button class="mini-btn">View</button></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="panel">
+                  <h4>Why they match</h4>
+                  <div class="bar-row"><div class="lbl"><span>Practical / hands-on skills</span><span>96%</span></div><div class="bar"><span style="width:96%"></span></div></div>
+                  <div class="bar-row"><div class="lbl"><span>Problem solving</span><span>90%</span></div><div class="bar"><span style="width:90%"></span></div></div>
+                  <div class="bar-row"><div class="lbl"><span>Reliability & attitude</span><span>93%</span></div><div class="bar"><span style="width:93%"></span></div></div>
+                  <div class="bar-row"><div class="lbl"><span>Location fit</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+                  <p style="font-size:0.85rem;color:var(--muted);margin-top:8px;">🔒 Candidates stay anonymous until you invite them to interview.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- College view -->
+            <div id="view-college" role="tabpanel" aria-labelledby="tab-college" hidden>
+              <div class="app-top">
+                <div>
+                  <h3>Learner Outcomes, 2026 intake</h3>
+                  <div class="sub">Example ETB · 142 learners registered</div>
+                </div>
+                <span class="chip blue">Report ready</span>
+              </div>
+              <div class="kpis">
+                <div class="kpi"><div class="k-label">Learners registered</div><div class="k-val">142</div><div class="k-delta">▲ 18 this month</div></div>
+                <div class="kpi"><div class="k-label">Readiness complete</div><div class="k-val">71%</div><div class="k-delta">▲ 9%</div></div>
+                <div class="kpi"><div class="k-label">Matched</div><div class="k-val">96</div><div class="k-delta">68% of learners</div></div>
+                <div class="kpi"><div class="k-label">Placed</div><div class="k-val">41</div><div class="k-delta">▲ 7 this month</div></div>
+              </div>
+              <div class="panels">
+                <div class="panel">
+                  <h4>Placements by sector</h4>
+                  <div class="bar-row"><div class="lbl"><span>Construction & Electrical</span><span>15</span></div><div class="bar"><span style="width:100%"></span></div></div>
+                  <div class="bar-row"><div class="lbl"><span>Engineering & Manufacturing</span><span>11</span></div><div class="bar"><span style="width:73%"></span></div></div>
+                  <div class="bar-row"><div class="lbl"><span>ICT</span><span>7</span></div><div class="bar"><span style="width:47%"></span></div></div>
+                  <div class="bar-row"><div class="lbl"><span>Hospitality</span><span>5</span></div><div class="bar"><span style="width:33%"></span></div></div>
+                  <div class="bar-row"><div class="lbl"><span>Finance & Business</span><span>3</span></div><div class="bar"><span style="width:20%"></span></div></div>
+                </div>
+                <div class="panel">
+                  <h4>Needs attention</h4>
+                  <div class="table-wrap">
+                    <table>
+                      <tbody>
+                        <tr><td>12 learners haven't started Readiness modules</td><td><span class="chip red">Nudge</span></td></tr>
+                        <tr><td>5 learners have interviews this week</td><td><span class="chip green">On track</span></td></tr>
+                        <tr><td>3 new employer partners in your region</td><td><span class="chip orange">New</span></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="demo-caption">Example screens with illustrative data.</p>
+    </div>
+  </section>
+
+  <!-- ================= SECTORS ================= -->
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Explore</span>
+        <h2>Apprenticeships in every sector</h2>
+        <p>From traditional craft trades to new-generation apprenticeships in tech, finance and more.</p>
+      </div>
+      <div class="sector-list">
+        <a href="#quiz" class="sector">🏗️ Construction</a>
+        <a href="#quiz" class="sector">⚡ Electrical</a>
+        <a href="#quiz" class="sector">⚙️ Engineering</a>
+        <a href="#quiz" class="sector">💻 ICT & Software</a>
+        <a href="#quiz" class="sector">📈 Finance & Accounting</a>
+        <a href="#quiz" class="sector">🍳 Hospitality & Culinary</a>
+        <a href="#quiz" class="sector">🏥 Healthcare</a>
+        <a href="#quiz" class="sector">🚚 Logistics</a>
+        <a href="#quiz" class="sector">🚗 Motor Mechanics</a>
+        <a href="#quiz" class="sector">🌱 Agriculture & Horticulture</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA ================= -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to start your future?</h2>
+      <p>Create your free profile in 5 minutes and get matched with apprenticeships across Ireland.</p>
       <div class="button-container">
-        <a href="for-candidates.html" class="btn">I'm looking for an apprenticeship</a>
-        <a href="for-employers.html" class="btn">I am hiring apprentices</a>
+        <a href="#quiz" class="btn btn-orange">Get started, it's free</a>
+        <a href="for-employers.html" class="btn btn-red">I am hiring an apprentice</a>
       </div>
     </div>
   </section>
 
-  <section class="features">
-    <h2>How It Works</h2>
-    <div class="feature-grid">
-      <div class="feature">
-        <div class="feature-icon">🎯</div>
-        <h3>Smart Matching</h3>
-        <p>AI-powered matching based on skills, interests, personality, and career goals - not just CVs.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">📚</div>
-        <h3>Readiness Programme</h3>
-        <p>Comprehensive preparation modules covering CVs, interviews, workplace skills, and more.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">💼</div>
-        <h3>Employer Partnership</h3>
-        <p>Connect with curated candidates who match your role requirements perfectly.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">👥</div>
-        <h3>Mentor Support</h3>
-        <p>Ongoing mentoring and support throughout the apprenticeship journey.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">📊</div>
-        <h3>Success Tracking</h3>
-        <p>Monitor outcomes and progress with real-time dashboards and insights.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon">🚀</div>
-        <h3>Career Growth</h3>
-        <p>Build pathways from apprenticeships to Level 4, 5, 6 qualifications and beyond.</p>
-      </div>
-    </div>
-  </section>
-
+  <!-- ================= FOOTER ================= -->
   <footer>
-    <p>&copy; 2027 ApprenticeLinks. Connecting potential to opportunity across Ireland.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo"><span class="logo-mark" aria-hidden="true">🎓</span><span>Apprentice<span class="accent">Links</span></span></div>
+          <p>Connecting potential to opportunity across Ireland.</p>
+          <p style="margin-top:10px;color:var(--orange-light);font-weight:600;">apprenticelink.ie</p>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <a href="for-candidates.html">For Candidates</a>
+          <a href="for-employers.html">For Employers</a>
+          <a href="for-colleges.html">For Colleges</a>
+          <a href="how-it-works.html">How It Works</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="readiness-programme.html">Readiness Programme</a>
+          <a href="why-hire-apprentices.html">Why Hire Apprentices</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="contact.html">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> ApprenticeLinks. All rights reserved.</span>
+        <span>Made in Ireland 🇮🇪</span>
+      </div>
+    </div>
   </footer>
+
+  <script src="site.js"></script>
+  <script>
+    // ---------- Sample questionnaire ----------
+    const questions = [
+      {
+        q: 'What do you enjoy doing most?',
+        options: [
+          { t: 'Building or fixing things with my hands', e: '🔨', s: { construction: 3, engineering: 2, motor: 2 } },
+          { t: 'Working with computers & technology', e: '💻', s: { ict: 3, engineering: 1 } },
+          { t: 'Helping and looking after people', e: '🤝', s: { health: 3, hospitality: 2 } },
+          { t: 'Numbers, business & organising', e: '📊', s: { finance: 3, logistics: 2 } }
+        ]
+      },
+      {
+        q: 'Where would you most like to work?',
+        options: [
+          { t: 'Outdoors or on site', e: '🏗️', s: { construction: 3, agri: 2 } },
+          { t: 'In a workshop, garage or factory', e: '⚙️', s: { engineering: 3, motor: 3 } },
+          { t: 'In an office or working remotely', e: '🏢', s: { ict: 2, finance: 3 } },
+          { t: 'Out with the public or in a busy kitchen', e: '🍳', s: { hospitality: 3, health: 2 } }
+        ]
+      },
+      {
+        q: 'Which school subject did you like best?',
+        options: [
+          { t: 'Construction Studies, Engineering or DCG', e: '📐', s: { construction: 3, engineering: 2 } },
+          { t: 'Maths or Physics', e: '➗', s: { engineering: 2, finance: 2, ict: 1 } },
+          { t: 'Computer Science', e: '🖥️', s: { ict: 3 } },
+          { t: 'Home Ec, Biology or Business', e: '🧪', s: { hospitality: 2, health: 2, finance: 1 } }
+        ]
+      },
+      {
+        q: 'How do you like to solve a problem?',
+        options: [
+          { t: 'Get stuck in and try things out', e: '🛠️', s: { construction: 2, motor: 2, engineering: 1 } },
+          { t: 'Work through it logically, step by step', e: '🧩', s: { ict: 2, engineering: 2 } },
+          { t: 'Talk it through with other people', e: '💬', s: { hospitality: 2, health: 2 } },
+          { t: 'Research it and look at the data', e: '🔍', s: { finance: 2, ict: 1, logistics: 1 } }
+        ]
+      },
+      {
+        q: 'What is your highest qualification so far?',
+        key: 'level',
+        options: [
+          { t: 'Junior Cycle', e: '📘', level: 'Junior Cycle' },
+          { t: 'Leaving Cert or LCA', e: '🎓', level: 'Leaving Cert' },
+          { t: 'QQI Level 5 or 6', e: '📜', level: 'QQI' },
+          { t: 'Degree, or I\'m changing career', e: '🔄', level: 'Career changer' }
+        ]
+      },
+      {
+        q: 'What matters most to you right now?',
+        options: [
+          { t: 'Earning money as soon as possible', e: '💶', s: { construction: 1, hospitality: 1, logistics: 1 } },
+          { t: 'A qualification that lasts a lifetime', e: '🏅', s: { engineering: 1, finance: 1, ict: 1 } },
+          { t: 'Skills I can use anywhere in the world', e: '🌍', s: { hospitality: 1, ict: 1, construction: 1 } },
+          { t: 'Starting my own business some day', e: '🚀', s: { construction: 1, motor: 1, agri: 1 } }
+        ]
+      }
+    ];
+
+    const sectors = {
+      construction: { role: 'Electrical Apprentice', icon: '⚡', meta: 'Craft apprenticeship · NFQ Level 6 · 4 years', alt: 'Plumber, Carpenter & Joiner' },
+      engineering:  { role: 'Mechanical Automation & Maintenance Fitter', icon: '⚙️', meta: 'Craft apprenticeship · NFQ Level 6 · 4 years', alt: 'Manufacturing Technician' },
+      ict:          { role: 'Software Developer', icon: '💻', meta: 'New-generation apprenticeship · NFQ Level 6 · 2 years', alt: 'Network Engineer, Cybersecurity' },
+      finance:      { role: 'Accounting Technician', icon: '📈', meta: 'New-generation apprenticeship · NFQ Level 6 · 2 years', alt: 'Insurance Practitioner' },
+      hospitality:  { role: 'Commis Chef', icon: '🍳', meta: 'New-generation apprenticeship · NFQ Level 6 · 2 years', alt: 'Chef de Partie' },
+      health:       { role: 'Healthcare Assistant', icon: '🏥', meta: 'New-generation apprenticeship · NFQ Level 5 · 2 years', alt: 'Pharmacy Technician' },
+      motor:        { role: 'Motor Mechanic', icon: '🚗', meta: 'Craft apprenticeship · NFQ Level 6 · 4 years', alt: 'Heavy Vehicle Mechanic' },
+      logistics:    { role: 'Logistics Associate', icon: '🚚', meta: 'New-generation apprenticeship · NFQ Level 6 · 2 years', alt: 'Supply Chain Associate' },
+      agri:         { role: 'Horticulture Apprentice', icon: '🌱', meta: 'New-generation apprenticeship · NFQ Level 6', alt: 'Farm Technician' }
+    };
+
+    let current = 0;
+    let answers = [];
+
+    const qTitle = document.getElementById('q-title');
+    const optionsEl = document.getElementById('options');
+    const progressBar = document.getElementById('progress-bar');
+    const progressEl = document.getElementById('progress');
+    const progressLabel = document.getElementById('progress-label');
+    const backBtn = document.getElementById('back-btn');
+    const quizBody = document.getElementById('quiz-body');
+    const results = document.getElementById('results');
+
+    function renderQuestion() {
+      const item = questions[current];
+      qTitle.textContent = item.q;
+      progressLabel.textContent = `Question ${current + 1} of ${questions.length}`;
+      progressBar.style.width = `${(current / questions.length) * 100}%`;
+      progressEl.setAttribute('aria-valuenow', current);
+      backBtn.disabled = current === 0;
+      optionsEl.innerHTML = '';
+      item.options.forEach((opt, i) => {
+        const b = document.createElement('button');
+        b.className = 'option';
+        b.innerHTML = `<span class="emoji" aria-hidden="true">${opt.e}</span><span>${opt.t}</span>`;
+        b.addEventListener('click', () => choose(i));
+        optionsEl.appendChild(b);
+      });
+    }
+
+    function choose(i) {
+      answers[current] = i;
+      current++;
+      if (current < questions.length) renderQuestion();
+      else showResults();
+    }
+
+    function showResults() {
+      const scores = {};
+      let level = 'Leaving Cert';
+      answers.forEach((ansIdx, qIdx) => {
+        const opt = questions[qIdx].options[ansIdx];
+        if (opt.level) level = opt.level;
+        if (opt.s) Object.entries(opt.s).forEach(([k, v]) => { scores[k] = (scores[k] || 0) + v; });
+      });
+      const ranked = Object.entries(scores).sort((a, b) => b[1] - a[1]).slice(0, 3);
+      const max = ranked[0][1];
+      const list = document.getElementById('result-list');
+      list.innerHTML = '';
+      ranked.forEach(([key, val], idx) => {
+        const s = sectors[key];
+        const pct = Math.round(72 + (val / max) * 24) - idx;
+        const div = document.createElement('div');
+        div.className = 'result-item' + (idx === 0 ? ' top' : '');
+        div.innerHTML = `
+          <span style="font-size:1.8rem" aria-hidden="true">${s.icon}</span>
+          <div class="info">
+            <div class="role">${s.role}${idx === 0 ? ' <span class="chip orange">Best match</span>' : ''}</div>
+            <div class="meta">${s.meta}</div>
+            <div class="meta">Also consider: ${s.alt}</div>
+          </div>
+          <div class="score">${pct}%</div>`;
+        list.appendChild(div);
+      });
+      const levelText = level === 'Career changer'
+        ? 'As a career changer, your experience counts. Many apprenticeships welcome adult learners.'
+        : level === 'Junior Cycle'
+          ? 'Many craft apprenticeships accept Junior Cycle, and our Readiness Programme will help you prepare.'
+          : 'You meet the typical entry requirements for these apprenticeships.';
+      document.getElementById('results-intro').textContent = `Based on your answers, here's where you could shine. ${levelText}`;
+      progressBar.style.width = '100%';
+      quizBody.hidden = true;
+      results.hidden = false;
+    }
+
+    function restart() {
+      current = 0;
+      answers = [];
+      results.hidden = true;
+      quizBody.hidden = false;
+      renderQuestion();
+    }
+
+    backBtn.addEventListener('click', () => {
+      if (current > 0) { current--; renderQuestion(); }
+    });
+    document.getElementById('restart-btn').addEventListener('click', restart);
+    renderQuestion();
+
+    // ---------- Platform demo tabs ----------
+    const views = ['candidate', 'employer', 'college'];
+    const urls = {
+      candidate: 'app.apprenticelink.ie/candidate/dashboard',
+      employer: 'app.apprenticelink.ie/employer/roles/electrical-cork',
+      college: 'app.apprenticelink.ie/college/outcomes'
+    };
+    function showView(name) {
+      views.forEach(v => {
+        document.getElementById('tab-' + v).setAttribute('aria-selected', v === name);
+        document.getElementById('view-' + v).hidden = v !== name;
+        document.getElementById('side-' + v).hidden = v !== name;
+      });
+      document.getElementById('demo-url').textContent = urls[name];
+    }
+    views.forEach(v => document.getElementById('tab-' + v).addEventListener('click', () => showView(v)));
+    document.querySelectorAll('[data-tab]').forEach(el => el.addEventListener('click', () => showView(el.dataset.tab)));
+  </script>
 </body>
 </html>
