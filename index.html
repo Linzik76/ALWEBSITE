@@ -5,76 +5,210 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="ApprenticeLinks - Ireland's leading AI-powered apprenticeship matching platform">
   <title>ApprenticeLinks - Match Potential to Opportunity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <div class="logo">🎓 ApprenticeLinks</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="for-candidates.html">For Candidates</a>
-      <a href="for-employers.html">For Employers</a>
-      <a href="for-colleges.html">For Colleges</a>
+<body class="home">
+  <header class="site-header">
+    <a href="index.html" class="logo"><span class="logo-mark">A</span>ApprenticeLinks</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="for-candidates.html">Candidates</a>
+      <a href="for-employers.html">Employers</a>
+      <a href="for-colleges.html">Colleges</a>
       <a href="how-it-works.html">How It Works</a>
-      <a href="readiness-programme.html">Readiness Programme</a>
-      <a href="why-hire-apprentices.html">Why Hire Apprentices</a>
+      <a href="readiness-programme.html">Readiness</a>
       <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-cta">Contact us</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <p class="domain">apprenticelinks.ie</p>
-      <h1>Match Potential to Opportunity</h1>
-      <p class="subtitle">We don't just connect people to jobs. We connect potential to opportunity. Using intelligent matching, candidate preparation, and employer partnerships, we're building Ireland's leading apprenticeship platform.</p>
-      
-      <div class="button-container">
-        <a href="for-candidates.html" class="btn">I'm looking for an apprenticeship</a>
-        <a href="for-employers.html" class="btn">I am hiring apprentices</a>
+  <!-- HERO -->
+  <section class="home-hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="home-hero-inner">
+      <div class="home-hero-text">
+        <span class="eyebrow">🇮🇪 Ireland's apprenticeship matching platform</span>
+        <h1>Match <span class="highlight">potential</span> to opportunity</h1>
+        <p class="lead">We don't just connect people to jobs. Using intelligent matching, real preparation and employer partnerships, we help you land an apprenticeship where you'll genuinely thrive.</p>
+        <div class="hero-actions">
+          <a href="for-candidates.html" class="btn">Find an apprenticeship →</a>
+          <a href="for-employers.html" class="btn btn-outline">I'm hiring apprentices</a>
+        </div>
+        <ul class="hero-trust">
+          <li>✓ Free for candidates</li>
+          <li>✓ Matched on more than your CV</li>
+          <li>✓ Mentor support throughout</li>
+        </ul>
+      </div>
+      <div class="home-hero-visual">
+        <img src="images/hero.jpg" alt="Two young apprentices smiling while working together at a workshop bench">
+        <div class="float-card float-card-1">
+          <span class="float-icon">✓</span>
+          <div><strong>New match!</strong><small>Electrical Apprentice · Cork</small></div>
+        </div>
+        <div class="float-card float-card-2">
+          <div class="match-ring"><span>94%</span></div>
+          <div><strong>Great fit</strong><small>Skills, interests &amp; goals</small></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="features">
-    <h2>How It Works</h2>
-    <div class="feature-grid">
-      <div class="feature">
-        <div class="feature-icon">🎯</div>
+  <!-- STATS -->
+  <section class="stats-band">
+    <div class="stat-item reveal"><span class="stat-num" data-count="9">0</span><span class="stat-label">Readiness modules</span></div>
+    <div class="stat-item reveal"><span class="stat-num">€<span data-count="0">0</span></span><span class="stat-label">Cost to candidates</span></div>
+    <div class="stat-item reveal"><span class="stat-num" data-count="5">0</span><span class="stat-label">Steps to your apprenticeship</span></div>
+    <div class="stat-item reveal"><span class="stat-num">1:1</span><span class="stat-label">Mentor support</span></div>
+  </section>
+
+  <!-- TRADES -->
+  <section class="home-section light">
+    <div class="section-head reveal">
+      <span class="eyebrow dark">Explore careers</span>
+      <h2>Find the path that fits you</h2>
+      <p>From the kitchen to the construction site, there's an apprenticeship for every kind of talent.</p>
+    </div>
+    <div class="trade-grid">
+      <a href="for-candidates.html" class="trade-tile reveal"><img src="images/trade-electrical.jpg" alt="Electrician testing wiring" loading="lazy"><span>Electrical</span></a>
+      <a href="for-candidates.html" class="trade-tile reveal"><img src="images/trade-culinary.jpg" alt="Young chef cooking in a professional kitchen" loading="lazy"><span>Culinary</span></a>
+      <a href="for-candidates.html" class="trade-tile reveal"><img src="images/trade-motor.jpg" alt="Young mechanic in a garage beside a toolbox" loading="lazy"><span>Motor Mechanics</span></a>
+      <a href="for-candidates.html" class="trade-tile reveal"><img src="images/trade-engineering.jpg" alt="Young technician soldering an electronic circuit" loading="lazy"><span>Engineering</span></a>
+      <a href="for-candidates.html" class="trade-tile reveal"><img src="images/trade-construction.jpg" alt="Young woman in a hard hat holding building plans" loading="lazy"><span>Construction</span></a>
+      <a href="for-candidates.html" class="trade-tile reveal"><img src="images/trade-ict.jpg" alt="Young team working together on laptops" loading="lazy"><span>ICT &amp; Business</span></a>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="home-section dark">
+    <div class="section-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>Everything you need, in one place</h2>
+    </div>
+    <div class="icon-grid">
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
         <h3>Smart Matching</h3>
-        <p>AI-powered matching based on skills, interests, personality, and career goals - not just CVs.</p>
+        <p>AI-powered matching based on skills, interests, personality and career goals - not just CVs.</p>
       </div>
-      <div class="feature">
-        <div class="feature-icon">📚</div>
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg></div>
         <h3>Readiness Programme</h3>
-        <p>Comprehensive preparation modules covering CVs, interviews, workplace skills, and more.</p>
+        <p>Preparation modules covering CVs, interviews, workplace skills and more.</p>
       </div>
-      <div class="feature">
-        <div class="feature-icon">💼</div>
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
         <h3>Employer Partnership</h3>
-        <p>Connect with curated candidates who match your role requirements perfectly.</p>
+        <p>Employers connect with curated candidates who match their role requirements.</p>
       </div>
-      <div class="feature">
-        <div class="feature-icon">👥</div>
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
         <h3>Mentor Support</h3>
         <p>Ongoing mentoring and support throughout the apprenticeship journey.</p>
       </div>
-      <div class="feature">
-        <div class="feature-icon">📊</div>
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 5-6"/></svg></div>
         <h3>Success Tracking</h3>
         <p>Monitor outcomes and progress with real-time dashboards and insights.</p>
       </div>
-      <div class="feature">
-        <div class="feature-icon">🚀</div>
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg></div>
         <h3>Career Growth</h3>
         <p>Build pathways from apprenticeships to Level 4, 5, 6 qualifications and beyond.</p>
       </div>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2027 ApprenticeLinks. Connecting potential to opportunity across Ireland.</p>
+  <!-- SPLIT: PREPARATION -->
+  <section class="home-section light">
+    <div class="split">
+      <div class="split-img reveal"><img src="images/mentor.jpg" alt="A mentor helping a young apprentice at a laptop" loading="lazy"></div>
+      <div class="split-text reveal">
+        <span class="eyebrow dark">Readiness Programme</span>
+        <h2>We don't just match you, we prepare you</h2>
+        <p>Walk into your interview confident. Our readiness modules and mentors help you get ready for the workplace before day one.</p>
+        <ul class="check-list">
+          <li>CV writing &amp; interview preparation</li>
+          <li>Workplace, communication &amp; digital skills</li>
+          <li>Personal branding &amp; employer research</li>
+          <li>A mentor in your corner the whole way</li>
+        </ul>
+        <a href="readiness-programme.html" class="btn">Explore the programme →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS
+       PLACEHOLDER: these quotes and names are examples only.
+       Replace them with real testimonials (with permission) before going live. -->
+  <section class="home-section cream">
+    <div class="section-head reveal">
+      <span class="eyebrow dark">Success stories</span>
+      <h2>Real people, real progress</h2>
+    </div>
+    <div class="quote-grid">
+      <figure class="quote-card reveal">
+        <blockquote>"I didn't know which trade suited me. ApprenticeLinks matched me with a role I actually love, and the interview prep made all the difference."</blockquote>
+        <figcaption><img src="images/person-1.jpg" alt="" loading="lazy"><div><strong>Aoife, 19</strong><span>Engineering Apprentice</span></div></figcaption>
+      </figure>
+      <figure class="quote-card reveal">
+        <blockquote>"Having a mentor to talk to in my first few months kept me going. I'm now working towards my next qualification."</blockquote>
+        <figcaption><img src="images/person-2.jpg" alt="" loading="lazy"><div><strong>Cian, 21</strong><span>Carpentry Apprentice</span></div></figcaption>
+      </figure>
+      <figure class="quote-card reveal">
+        <blockquote>"The candidates we met were prepared and genuinely a good fit. It saved us weeks of screening."</blockquote>
+        <figcaption><img src="images/person-3.jpg" alt="" loading="lazy"><div><strong>Grace</strong><span>Hiring Manager, Construction</span></div></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="cta-inner reveal">
+      <div>
+        <h2>Ready to start your journey?</h2>
+        <p>Join free today and get matched with apprenticeships that suit you.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="for-candidates.html" class="btn btn-dark">Get started free</a>
+        <a href="contact.html" class="btn btn-ghost">Talk to our team</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-mark">A</span>ApprenticeLinks</a>
+        <p>Connecting potential to opportunity across Ireland.</p>
+      </div>
+      <div>
+        <h4>Candidates</h4>
+        <a href="for-candidates.html">Find an apprenticeship</a>
+        <a href="readiness-programme.html">Readiness Programme</a>
+        <a href="how-it-works.html">How it works</a>
+      </div>
+      <div>
+        <h4>Employers &amp; Colleges</h4>
+        <a href="for-employers.html">Hire apprentices</a>
+        <a href="why-hire-apprentices.html">Why hire apprentices</a>
+        <a href="for-colleges.html">For colleges</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2026 ApprenticeLinks. Proudly Irish 🇮🇪</p>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
