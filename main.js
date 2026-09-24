@@ -20,7 +20,7 @@ function countUp(el) {
   const start = performance.now();
   function tick(now) {
     const progress = Math.min((now - start) / duration, 1);
-    el.textContent = Math.round(target * (1 - Math.pow(1 - progress, 3)));
+    el.textContent = Math.round(target * (1 - Math.pow(1 - progress, 3))).toLocaleString('en-IE');
     if (progress < 1) requestAnimationFrame(tick);
   }
   requestAnimationFrame(tick);
@@ -41,3 +41,14 @@ if ('IntersectionObserver' in window) {
 } else {
   revealEls.forEach((el) => el.classList.add('visible'));
 }
+
+// FAQ tabs
+document.querySelectorAll('.faq-tab').forEach((tab) => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.faq-tab').forEach((t) => t.classList.toggle('active', t === tab));
+    document.querySelectorAll('[data-panel]').forEach((panel) => {
+      panel.hidden = panel.dataset.panel !== tab.dataset.tab;
+      panel.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+    });
+  });
+});

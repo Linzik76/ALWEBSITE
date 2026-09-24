@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Take the 2-minute ApprenticeLinks career vibe quiz and discover which apprenticeship suits your personality.">
+  <title>Career Vibe Quiz - ApprenticeLinks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+  <header class="site-header">
+    <a href="index.html" class="logo"><span class="logo-mark">A</span>ApprenticeLinks</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="for-candidates.html">Candidates</a>
+      <a href="for-employers.html">Employers</a>
+      <a href="for-colleges.html">Colleges</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="readiness-programme.html">Readiness</a>
+      <a href="faq.html">FAQ</a>
+      <a href="quiz.html" class="active">✨ Quiz</a>
+      <a href="contact.html" class="nav-cta">Contact us</a>
+    </nav>
+  </header>
+
+  <section class="page-hero compact quiz-hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="quiz-shell">
+      <div class="quiz-card" id="quiz">
+        <!-- Intro -->
+        <div class="quiz-screen active" id="quiz-intro">
+          <span class="quiz-big-emoji">🧭</span>
+          <span class="eyebrow">Career vibe quiz</span>
+          <h1>What's your <span class="highlight">apprenticeship</span> vibe?</h1>
+          <p class="lead">8 quick questions. No wrong answers. Find out which kind of apprenticeship matches your personality.</p>
+          <button class="btn" id="quiz-start">Let's go →</button>
+          <p class="quiz-small">Takes about 2 minutes · Just for fun</p>
+        </div>
+
+        <!-- Questions -->
+        <div class="quiz-screen" id="quiz-question">
+          <div class="quiz-progress"><div class="quiz-progress-fill" id="quiz-progress-fill"></div></div>
+          <div class="quiz-meta"><button class="quiz-back" id="quiz-back">← Back</button><span id="quiz-count">1 / 8</span></div>
+          <h2 id="quiz-q"></h2>
+          <div class="quiz-answers" id="quiz-answers"></div>
+        </div>
+
+        <!-- Result -->
+        <div class="quiz-screen" id="quiz-result">
+          <div class="result-top">
+            <div class="result-img"><img id="result-img" src="" alt=""></div>
+            <div class="result-text">
+              <span class="eyebrow">Your vibe is…</span>
+              <h1 id="result-title"></h1>
+              <p class="result-match"><span id="result-pct"></span> match with <strong id="result-trade"></strong></p>
+              <p id="result-desc"></p>
+            </div>
+          </div>
+          <div class="result-traits" id="result-traits"></div>
+          <div class="result-cols">
+            <div>
+              <h3>Apprenticeships to explore</h3>
+              <ul class="result-list" id="result-jobs"></ul>
+            </div>
+            <div>
+              <h3>Your other matches</h3>
+              <div id="result-bars"></div>
+            </div>
+          </div>
+          <div class="result-actions">
+            <a href="for-candidates.html" class="btn">Find my apprenticeship →</a>
+            <button class="btn btn-outline" id="quiz-share">Share my result</button>
+            <button class="btn btn-outline" id="quiz-restart">Retake quiz</button>
+          </div>
+          <p class="quiz-small">This is a sample quiz for fun and inspiration. Our full matching looks at your skills, interests and goals too.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-mark">A</span>ApprenticeLinks</a>
+        <p>Connecting potential to opportunity across Ireland.</p>
+      </div>
+      <div>
+        <h4>Candidates</h4>
+        <a href="for-candidates.html">Find an apprenticeship</a>
+        <a href="quiz.html">Take the career quiz</a>
+        <a href="readiness-programme.html">Readiness Programme</a>
+        <a href="how-it-works.html">How it works</a>
+      </div>
+      <div>
+        <h4>Employers &amp; Colleges</h4>
+        <a href="for-employers.html">Hire apprentices</a>
+        <a href="why-hire-apprentices.html">Why hire apprentices</a>
+        <a href="for-colleges.html">For colleges</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2026 ApprenticeLinks. Proudly Irish 🇮🇪</p>
+  </footer>
+  <script src="main.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>

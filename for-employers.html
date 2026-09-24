@@ -3,72 +3,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="For Employers - Hire the right apprentices with ApprenticeLinks">
+  <meta name="description" content="Hire better apprentices, faster, with pre-prepared, matched candidates.">
   <title>For Employers - ApprenticeLinks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <div class="logo">🎓 ApprenticeLinks</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="for-candidates.html">For Candidates</a>
-      <a href="for-employers.html">For Employers</a>
-      <a href="for-colleges.html">For Colleges</a>
+<body class="home">
+  <header class="site-header">
+    <a href="index.html" class="logo"><span class="logo-mark">A</span>ApprenticeLinks</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="for-candidates.html">Candidates</a>
+      <a href="for-employers.html" class="active">Employers</a>
+      <a href="for-colleges.html">Colleges</a>
       <a href="how-it-works.html">How It Works</a>
-      <a href="readiness-programme.html">Readiness Programme</a>
-      <a href="why-hire-apprentices.html">Why Hire Apprentices</a>
+      <a href="readiness-programme.html">Readiness</a>
       <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
+      <a href="quiz.html">✨ Quiz</a>
+      <a href="contact.html" class="nav-cta">Contact us</a>
     </nav>
   </header>
 
-  <section class="section">
-    <h2>For Employers</h2>
-    
-    <div class="card">
-      <h3>Hire Better Apprentices, Faster</h3>
-      <p>Finding the right apprentice is hard. You wade through hundreds of CVs, conduct endless interviews, and hope for the best. Even when you hire, fit issues emerge months in—leading to early terminations, lost productivity, and wasted resources.</p>
-      <p style="margin-top: 15px;">ApprenticeLinks eliminates this. Our AI matches your vacancies with pre-prepared, assessed, and verified candidates. You get fewer applicants—but better ones. Your placements last. Your teams thrive.</p>
-    </div>
-
-    <div class="card">
-      <h3>The Employer Platform</h3>
-      <p><strong>1. Post Vacancies</strong> - Describe your role, team, and culture. Our system analyzes what makes a candidate successful in your organization.</p>
-      <p style="margin-top: 10px;"><strong>2. Receive Curated Matches</strong> - Get matched with pre-assessed candidates whose skills, personality, and learning style align with your role and company.</p>
-      <p style="margin-top: 10px;"><strong>3. Review Profiles</strong> - See comprehensive candidate profiles: skills, readiness assessments, personality insights, learning style, career goals.</p>
-      <p style="margin-top: 10px;"><strong>4. Shortlist & Interview</strong> - Contact pre-qualified candidates confidently. Our system explains the match so you can focus on interviews.</p>
-      <p style="margin-top: 10px;"><strong>5. Track Outcomes</strong> - Monitor apprentice progress, completion rates, and long-term retention with real-time dashboards.</p>
-    </div>
-
-    <div class="card">
-      <h3>Why ApprenticeLinks for Employers?</h3>
-      <ul style="margin-left: 20px; margin-top: 10px;">
-        <li><strong>Better Matches:</strong> AI identifies candidates who fit your role and culture, reducing early termination</li>
-        <li><strong>Time Savings:</strong> No resume pile-sorting; get pre-vetted, matched candidates</li>
-        <li><strong>Quality Candidates:</strong> Candidates have completed readiness modules and personality assessments</li>
-        <li><strong>Data-Driven Hiring:</strong> Understand placement success rates and match quality metrics</li>
-        <li><strong>Outcome Tracking:</strong> Monitor apprentice progress and completion rates in real time</li>
-        <li><strong>Affordable:</strong> Subscription-based pricing scales with your hiring volume</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Pricing & Plans</h3>
-      <p><strong>Starter Plan:</strong> Perfect for small employers. Post up to 5 vacancies, receive curated matches, basic candidate profiles.</p>
-      <p style="margin-top: 10px;"><strong>Growth Plan:</strong> For growing teams. Unlimited vacancies, advanced candidate analytics, priority support, outcome tracking.</p>
-      <p style="margin-top: 10px;"><strong>Enterprise Plan:</strong> Custom solutions for large employers. API access, SOLAS/ETB integration, dedicated account manager, custom reporting.</p>
-    </div>
-
-    <div class="button-container" style="margin-top: 40px;">
-      <a href="for-employers.html" class="btn">Start Hiring Today</a>
+  <section class="page-hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="page-hero-inner">
+      <div class="page-hero-text">
+        <span class="eyebrow">For employers</span>
+        <h1>Hire better apprentices, <span class="highlight">faster</span></h1>
+        <p class="lead">Fewer applicants, better ones. Our matching connects your vacancies with prepared, assessed candidates, so your placements last and your teams thrive.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn">Start hiring →</a>
+          <a href="why-hire-apprentices.html" class="btn btn-outline">Why hire apprentices?</a>
+        </div>
+      </div>
+      <div class="page-hero-img"><img src="images/banner-employers.jpg" alt="A site manager and a colleague reviewing plans together"></div>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2027 ApprenticeLinks. Connecting potential to opportunity across Ireland.</p>
+  <section class="home-section light">
+    <div class="compare">
+      <div class="compare-card problem reveal">
+        <span class="compare-tag">The problem</span>
+        <h3>Hiring apprentices is hard</h3>
+        <p>You wade through hundreds of CVs, run endless interviews and hope for the best. Even when you hire, fit issues show up months later, leading to early exits, lost productivity and wasted resources.</p>
+      </div>
+      <div class="compare-card solution reveal">
+        <span class="compare-tag">Our solution</span>
+        <h3>Matched, prepared candidates</h3>
+        <p>ApprenticeLinks matches your vacancies with pre-prepared, assessed and verified candidates. You see fewer applicants, but better ones, with a clear explanation of why each is a fit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section cream">
+    <div class="section-head reveal">
+      <span class="eyebrow dark">The employer platform</span>
+      <h2>How hiring works</h2>
+      <p>Five simple steps from vacancy to thriving apprentice.</p>
+    </div>
+    <ol class="timeline">
+      <li class="reveal"><span class="t-num">1</span><div><h3>Post your vacancy</h3><p>Describe your role, team and culture. We work out what makes someone successful with you.</p></div></li>
+      <li class="reveal"><span class="t-num">2</span><div><h3>Receive curated matches</h3><p>Get matched with pre-assessed candidates whose skills, personality and learning style suit your role.</p></div></li>
+      <li class="reveal"><span class="t-num">3</span><div><h3>Review profiles</h3><p>See skills, readiness assessments, personality insights, learning style and career goals.</p></div></li>
+      <li class="reveal"><span class="t-num">4</span><div><h3>Shortlist &amp; interview</h3><p>Contact pre-qualified candidates with confidence. We explain every match.</p></div></li>
+      <li class="reveal"><span class="t-num">5</span><div><h3>Track outcomes</h3><p>Follow apprentice progress, completion and retention with real-time dashboards.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="home-section dark">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why employers choose us</span>
+      <h2>Built to make placements last</h2>
+    </div>
+    <div class="icon-grid">
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <h3>Better matches</h3>
+        <p>Candidates who fit your role and your culture, reducing early leavers.</p>
+      </div>
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Time savings</h3>
+        <p>No more sorting piles of CVs. Just pre-vetted, matched candidates.</p>
+      </div>
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div>
+        <h3>Quality candidates</h3>
+        <p>Every candidate has completed readiness modules and assessments.</p>
+      </div>
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 5-6"/></svg></div>
+        <h3>Data-driven hiring</h3>
+        <p>Understand placement success rates and match quality.</p>
+      </div>
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>Outcome tracking</h3>
+        <p>Monitor apprentice progress and completion in real time.</p>
+      </div>
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M18 7a7 7 0 1 0 0 10"/><path d="M4 10h10"/><path d="M4 14h10"/></svg></div>
+        <h3>Affordable</h3>
+        <p>Subscription pricing that scales with your hiring.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section light">
+    <div class="section-head reveal">
+      <span class="eyebrow dark">Pricing</span>
+      <h2>Plans for every size of business</h2>
+      <p>Every plan includes access to our matching and candidate profiles.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <h3>Starter</h3>
+        <p class="price">€20–50<span>/month</span></p>
+        <p class="price-desc">Perfect for small employers.</p>
+        <ul class="check-list">
+          <li>Up to 5 vacancies</li>
+          <li>Curated matches</li>
+          <li>Candidate profiles</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline-dark">Get started</a>
+      </div>
+      <div class="price-card featured reveal">
+        <span class="price-badge">Most popular</span>
+        <h3>Growth</h3>
+        <p class="price">€100–300<span>/month</span></p>
+        <p class="price-desc">For growing teams.</p>
+        <ul class="check-list">
+          <li>Unlimited vacancies</li>
+          <li>Advanced candidate analytics</li>
+          <li>Outcome tracking</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="contact.html" class="btn">Get started</a>
+      </div>
+      <div class="price-card reveal">
+        <h3>Enterprise</h3>
+        <p class="price">Custom</p>
+        <p class="price-desc">For large employers.</p>
+        <ul class="check-list">
+          <li>API access</li>
+          <li>SOLAS / ETB integration</li>
+          <li>Dedicated account manager</li>
+          <li>Custom reporting</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline-dark">Talk to us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band" style="--cta-top: #faf7f2">
+    <div class="cta-inner reveal">
+      <div>
+        <h2>Ready to meet your next apprentice?</h2>
+        <p>Tell us about your role and we will do the rest.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-dark">Start hiring today</a>
+        <a href="why-hire-apprentices.html" class="btn btn-ghost">Why hire apprentices?</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-mark">A</span>ApprenticeLinks</a>
+        <p>Connecting potential to opportunity across Ireland.</p>
+      </div>
+      <div>
+        <h4>Candidates</h4>
+        <a href="for-candidates.html">Find an apprenticeship</a>
+        <a href="quiz.html">Take the career quiz</a>
+        <a href="readiness-programme.html">Readiness Programme</a>
+        <a href="how-it-works.html">How it works</a>
+      </div>
+      <div>
+        <h4>Employers &amp; Colleges</h4>
+        <a href="for-employers.html">Hire apprentices</a>
+        <a href="why-hire-apprentices.html">Why hire apprentices</a>
+        <a href="for-colleges.html">For colleges</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2026 ApprenticeLinks. Proudly Irish 🇮🇪</p>
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>

@@ -3,98 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="How ApprenticeLinks Works - The AI matching process explained">
+  <meta name="description" content="How ApprenticeLinks matches candidates and employers: smart matching, readiness and outcomes.">
   <title>How It Works - ApprenticeLinks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <div class="logo">🎓 ApprenticeLinks</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="for-candidates.html">For Candidates</a>
-      <a href="for-employers.html">For Employers</a>
-      <a href="for-colleges.html">For Colleges</a>
-      <a href="how-it-works.html">How It Works</a>
-      <a href="readiness-programme.html">Readiness Programme</a>
-      <a href="why-hire-apprentices.html">Why Hire Apprentices</a>
+<body class="home">
+  <header class="site-header">
+    <a href="index.html" class="logo"><span class="logo-mark">A</span>ApprenticeLinks</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="for-candidates.html">Candidates</a>
+      <a href="for-employers.html">Employers</a>
+      <a href="for-colleges.html">Colleges</a>
+      <a href="how-it-works.html" class="active">How It Works</a>
+      <a href="readiness-programme.html">Readiness</a>
       <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
+      <a href="quiz.html">✨ Quiz</a>
+      <a href="contact.html" class="nav-cta">Contact us</a>
     </nav>
   </header>
 
-  <section class="section">
-    <h2>How It Works</h2>
-    
-    <div class="card">
-      <h3>The Three Pillars</h3>
-      <p>ApprenticeLinks is built on three interconnected pillars that work together to create successful apprenticeship placements:</p>
-    </div>
-
-    <div class="card">
-      <h3>1. Smart Matching Engine</h3>
-      <p>Our AI matching algorithm analyzes 42 data points about each candidate and vacancy to predict placement success with over 75% accuracy.</p>
-      <p style="margin-top: 10px;"><strong>Candidate Features (30):</strong> Technical skills, soft skills, personality (Big Five), learning style, location preferences, readiness score, engagement level, career goals, and more.</p>
-      <p style="margin-top: 10px;"><strong>Vacancy Features (12):</strong> Role type, sector, experience level, salary range, employer success rate, team size, company culture, required certifications, and more.</p>
-      <p style="margin-top: 10px;"><strong>Output:</strong> A success probability (0-100) for each candidate-vacancy pairing, plus SHAP-powered explanations in plain English.</p>
-      <p style="margin-top: 10px;"><strong>Model:</strong> XGBoost with fairness monitoring to ensure demographic parity and no algorithmic bias.</p>
-    </div>
-
-    <div class="card">
-      <h3>2. Readiness Programme</h3>
-      <p>Before matching, candidates complete our 9-module readiness programme:</p>
-      <ul style="margin-left: 20px; margin-top: 10px;">
-        <li>Apprenticeship 101</li>
-        <li>CV Development</li>
-        <li>Interview Prep</li>
-        <li>Communication Skills</li>
-        <li>Workplace Readiness</li>
-        <li>Digital Skills</li>
-        <li>Employer Research</li>
-        <li>Personal Branding</li>
-        <li>Soft Skills Assessment</li>
-      </ul>
-      <p style="margin-top: 10px;">Each module includes video content, exercises, quizzes, and self-reflection. Progress is tracked, and candidates earn readiness scores that feed into matching.</p>
-    </div>
-
-    <div class="card">
-      <h3>3. Employer Partnership & Outcomes</h3>
-      <p>After placement, we track outcomes to continuously improve matches:</p>
-      <ul style="margin-left: 20px; margin-top: 10px;">
-        <li><strong>Placement Monitoring:</strong> Track apprentice progress, engagement, and learning outcomes</li>
-        <li><strong>Completion Prediction:</strong> Identify candidates at risk of early termination and intervene early</li>
-        <li><strong>Success Metrics:</strong> Measure long-term retention, progression to higher qualifications, and employer satisfaction</li>
-        <li><strong>Model Improvement:</strong> Use outcomes data to refine our matching algorithm monthly</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>The Matching Process</h3>
-      <p><strong>Phase 1: Manual Pilot (Weeks 1-4)</strong> - We validate demand and build initial candidate cohorts manually with one ETB or large employer (50-100 candidates).</p>
-      <p style="margin-top: 10px;"><strong>Phase 2: MVP (Weeks 5-16)</strong> - Launch rules-based matching. Candidates complete readiness; employers post vacancies; we manually match via dashboard. Deploy apprenticelinks.ie.</p>
-      <p style="margin-top: 10px;"><strong>Phase 3: ML (Weeks 17-32)</strong> - Deploy XGBoost matching engine. Candidates take personality and learning style assessments. Expand employer dashboard with outcome tracking.</p>
-      <p style="margin-top: 10px;"><strong>Phase 4: Scale (Weeks 33-48)</strong> - Integrate SOLAS and ETB systems. Add mentor matching. Launch UK expansion. Build alumni network.</p>
-    </div>
-
-    <div class="card">
-      <h3>Real-Time Matching</h3>
-      <p>Once deployed, the matching engine works in real time:</p>
-      <ol style="margin-left: 20px; margin-top: 10px;">
-        <li>Employer posts a vacancy</li>
-        <li>Our system analyzes the role and company</li>
-        <li>For each candidate, we compute a success probability (&lt;50ms)</li>
-        <li>Top matches are shown to employer; candidate reasons are explained</li>
-        <li>Employer reviews profiles and selects candidates to contact</li>
-        <li>Candidate-employer interviews proceed as normal</li>
-        <li>Placement outcomes inform model updates</li>
-      </ol>
+  <section class="page-hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="page-hero-inner">
+      <div class="page-hero-text">
+        <span class="eyebrow">How it works</span>
+        <h1>Three pillars, one <span class="highlight">great match</span></h1>
+        <p class="lead">ApprenticeLinks brings together smart matching, real preparation and outcome tracking, so every placement has the best chance of success.</p>
+        <div class="hero-actions">
+          <a href="for-candidates.html" class="btn">I'm a candidate →</a>
+          <a href="for-employers.html" class="btn btn-outline">I'm an employer</a>
+        </div>
+      </div>
+      <div class="page-hero-img"><img src="images/banner-how.jpg" alt="Two young women working together on a laptop"></div>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2027 ApprenticeLinks. Connecting potential to opportunity across Ireland.</p>
+  <section class="home-section light">
+    <div class="section-head reveal">
+      <span class="eyebrow dark">The three pillars</span>
+      <h2>Everything works together</h2>
+    </div>
+    <div class="pillar-grid">
+      <div class="pillar reveal">
+        <span class="pillar-num">01</span>
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <h3>Smart matching engine</h3>
+        <p>We analyse 42 data points about each candidate and vacancy to predict how likely a placement is to succeed, and explain every match in plain English.</p>
+      </div>
+      <div class="pillar reveal">
+        <span class="pillar-num">02</span>
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg></div>
+        <h3>Readiness Programme</h3>
+        <p>Before matching, candidates complete 9 modules with video, exercises, quizzes and reflection. Their readiness score feeds into matching.</p>
+      </div>
+      <div class="pillar reveal">
+        <span class="pillar-num">03</span>
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 5-6"/></svg></div>
+        <h3>Partnership &amp; outcomes</h3>
+        <p>After placement we track progress, spot risks early and use real outcomes to improve our matches every month.</p>
+      </div>
+    </div>
+    <div class="stats-band inline">
+    <div class="stat-item reveal"><span class="stat-num" data-count="42">42</span><span class="stat-label">Data points per match</span></div>
+    <div class="stat-item reveal"><span class="stat-num"><span data-count="75">75</span>%+</span><span class="stat-label">Target prediction accuracy</span></div>
+    <div class="stat-item reveal"><span class="stat-num">&lt;<span data-count="50">50</span>ms</span><span class="stat-label">To score each match</span></div>
+    <div class="stat-item reveal"><span class="stat-num" data-count="9">9</span><span class="stat-label">Readiness modules</span></div>
+    </div>
+  </section>
+
+  <section class="home-section dark">
+    <div class="section-head reveal">
+      <span class="eyebrow">Inside the matching engine</span>
+      <h2>What goes into a match</h2>
+    </div>
+    <div class="engine">
+      <div class="engine-col reveal">
+        <h3>Candidate (30 features)</h3>
+        <div class="chips"><span>Technical skills</span><span>Soft skills</span><span>Personality (Big Five)</span><span>Learning style</span><span>Location</span><span>Readiness score</span><span>Engagement</span><span>Career goals</span></div>
+      </div>
+      <div class="engine-mid reveal"><div class="engine-core"><div class="engine-icon"><svg viewBox="0 0 24 24"><path d="M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2z"/></svg></div><strong>Match score</strong><span>0–100 + plain-English reasons</span></div></div>
+      <div class="engine-col reveal">
+        <h3>Vacancy (12 features)</h3>
+        <div class="chips"><span>Role type</span><span>Sector</span><span>Experience level</span><span>Salary range</span><span>Team size</span><span>Company culture</span><span>Certifications</span><span>Employer success rate</span></div>
+      </div>
+    </div>
+    <p class="engine-note reveal">Built with fairness monitoring to check for demographic parity and guard against algorithmic bias.</p>
+  </section>
+
+  <section class="home-section light">
+    <div class="section-head reveal">
+      <span class="eyebrow dark">Real-time matching</span>
+      <h2>From vacancy to interview</h2>
+    </div>
+    <ol class="timeline">
+      <li class="reveal"><span class="t-num">1</span><div><h3>Employer posts a vacancy</h3><p>The role, team and company culture are captured.</p></div></li>
+      <li class="reveal"><span class="t-num">2</span><div><h3>We analyse the role</h3><p>Our system works out what success looks like in this position.</p></div></li>
+      <li class="reveal"><span class="t-num">3</span><div><h3>Every candidate is scored</h3><p>A success probability is calculated for each candidate in under 50ms.</p></div></li>
+      <li class="reveal"><span class="t-num">4</span><div><h3>Top matches are shown</h3><p>The employer sees the best matches, with the reasons explained.</p></div></li>
+      <li class="reveal"><span class="t-num">5</span><div><h3>Interviews go ahead</h3><p>The employer contacts candidates and interviews proceed as normal.</p></div></li>
+      <li class="reveal"><span class="t-num">6</span><div><h3>Outcomes make it smarter</h3><p>Placement results feed back to improve future matches.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="home-section cream">
+    <div class="section-head reveal">
+      <span class="eyebrow dark">Our roadmap</span>
+      <h2>Where we are headed</h2>
+    </div>
+    <div class="roadmap">
+      <div class="phase reveal"><span class="phase-tag">Phase 1 · Weeks 1–4</span><h3>Manual pilot</h3><p>Validate demand and build initial cohorts of 50–100 candidates with one ETB or large employer.</p></div>
+      <div class="phase reveal"><span class="phase-tag">Phase 2 · Weeks 5–16</span><h3>MVP</h3><p>Rules-based matching, readiness modules, employer vacancies and launch of apprenticelinks.ie.</p></div>
+      <div class="phase reveal"><span class="phase-tag">Phase 3 · Weeks 17–32</span><h3>Machine learning</h3><p>Full matching engine, personality and learning style assessments, and outcome dashboards.</p></div>
+      <div class="phase reveal"><span class="phase-tag">Phase 4 · Weeks 33–48</span><h3>Scale</h3><p>SOLAS and ETB integration, mentor matching, UK expansion and an alumni network.</p></div>
+    </div>
+  </section>
+
+  <section class="cta-band" style="--cta-top: #f3ece2">
+    <div class="cta-inner reveal">
+      <div>
+        <h2>See where you fit</h2>
+        <p>Start as a candidate, or post your first vacancy.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="for-candidates.html" class="btn btn-dark">I'm a candidate</a>
+        <a href="for-employers.html" class="btn btn-ghost">I'm an employer</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-mark">A</span>ApprenticeLinks</a>
+        <p>Connecting potential to opportunity across Ireland.</p>
+      </div>
+      <div>
+        <h4>Candidates</h4>
+        <a href="for-candidates.html">Find an apprenticeship</a>
+        <a href="quiz.html">Take the career quiz</a>
+        <a href="readiness-programme.html">Readiness Programme</a>
+        <a href="how-it-works.html">How it works</a>
+      </div>
+      <div>
+        <h4>Employers &amp; Colleges</h4>
+        <a href="for-employers.html">Hire apprentices</a>
+        <a href="why-hire-apprentices.html">Why hire apprentices</a>
+        <a href="for-colleges.html">For colleges</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2026 ApprenticeLinks. Proudly Irish 🇮🇪</p>
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>

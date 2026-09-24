@@ -3,79 +3,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="For Candidates - Find your perfect apprenticeship match">
+  <meta name="description" content="Find an apprenticeship that fits you - free matching, preparation and mentor support.">
   <title>For Candidates - ApprenticeLinks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <div class="logo">🎓 ApprenticeLinks</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="for-candidates.html">For Candidates</a>
-      <a href="for-employers.html">For Employers</a>
-      <a href="for-colleges.html">For Colleges</a>
+<body class="home">
+  <header class="site-header">
+    <a href="index.html" class="logo"><span class="logo-mark">A</span>ApprenticeLinks</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav">
+      <a href="for-candidates.html" class="active">Candidates</a>
+      <a href="for-employers.html">Employers</a>
+      <a href="for-colleges.html">Colleges</a>
       <a href="how-it-works.html">How It Works</a>
-      <a href="readiness-programme.html">Readiness Programme</a>
-      <a href="why-hire-apprentices.html">Why Hire Apprentices</a>
+      <a href="readiness-programme.html">Readiness</a>
       <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
+      <a href="quiz.html">✨ Quiz</a>
+      <a href="contact.html" class="nav-cta">Contact us</a>
     </nav>
   </header>
 
-  <section class="section">
-    <h2>For Candidates</h2>
-    
-    <div class="card">
-      <h3>Find Your Perfect Match</h3>
-      <p>Not all apprenticeships are created equal—and neither are candidates. Our AI-powered matching engine considers your unique skills, interests, personality, learning style, and career goals to connect you with roles where you'll genuinely thrive.</p>
-    </div>
-
-    <div class="card">
-      <h3>The Candidate Journey</h3>
-      <p><strong>1. Create Your Profile</strong> - Tell us about yourself: skills, interests, personality traits (Big Five), and career aspirations.</p>
-      <p style="margin-top: 10px;"><strong>2. Complete the Readiness Programme</strong> - Access 9 comprehensive modules covering CV writing, interview prep, workplace skills, digital literacy, and more.</p>
-      <p style="margin-top: 10px;"><strong>3. Get Matched</strong> - Our algorithm identifies roles perfectly suited to you, with personalized explanations of why each match is a good fit.</p>
-      <p style="margin-top: 10px;"><strong>4. Apply & Interview</strong> - Prepared and confident, you apply to matched positions and ace your interviews.</p>
-      <p style="margin-top: 10px;"><strong>5. Succeed & Grow</strong> - Start your apprenticeship with mentor support, progress tracking, and pathways to Level 4, 5, and 6 qualifications.</p>
-    </div>
-
-    <div class="card">
-      <h3>The Readiness Programme</h3>
-      <p>We don't just match you—we prepare you. Our 9-module readiness programme covers:</p>
-      <ul style="margin-left: 20px; margin-top: 10px;">
-        <li>Apprenticeship 101 - Understand the landscape and your options</li>
-        <li>CV Development - Craft a compelling CV</li>
-        <li>Interview Prep - Master interview techniques</li>
-        <li>Communication Skills - Ace workplace communication</li>
-        <li>Workplace Readiness - Navigate your first role</li>
-        <li>Digital Skills - Essential tech competencies</li>
-        <li>Employer Research - Know who you're applying to</li>
-        <li>Personal Branding - Stand out from the crowd</li>
-        <li>Soft Skills Assessment - Develop self-awareness</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Why ApprenticeLinks for Candidates?</h3>
-      <ul style="margin-left: 20px; margin-top: 10px;">
-        <li><strong>Personalized Matching:</strong> No spray-and-pray applications—get matched to roles where you'll succeed</li>
-        <li><strong>Preparation:</strong> Build confidence with our comprehensive readiness modules</li>
-        <li><strong>Support:</strong> Access mentor guidance throughout your apprenticeship</li>
-        <li><strong>Transparency:</strong> Understand why you're matched to each role</li>
-        <li><strong>Free Access:</strong> Candidates use ApprenticeLinks completely free</li>
-      </ul>
-    </div>
-
-    <div class="button-container" style="margin-top: 40px;">
-      <a href="for-candidates.html" class="btn">Get Started Now</a>
+  <section class="page-hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="page-hero-inner">
+      <div class="page-hero-text">
+        <span class="eyebrow">For candidates</span>
+        <h1>Find the apprenticeship <span class="highlight">made for you</span></h1>
+        <p class="lead">Not all apprenticeships are created equal, and neither are candidates. We match you on your skills, interests, personality and goals, so you land a role where you'll genuinely thrive.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn">Get started free →</a>
+          <a href="quiz.html" class="btn btn-outline">Take the career quiz</a>
+        </div>
+      </div>
+      <div class="page-hero-img"><img src="images/banner-candidates.jpg" alt="Two smiling young apprentices in hard hats and workwear"></div>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2027 ApprenticeLinks. Connecting potential to opportunity across Ireland.</p>
+  <section class="home-section light">
+    <div class="section-head reveal">
+      <span class="eyebrow dark">Your journey</span>
+      <h2>Five steps to your apprenticeship</h2>
+      <p>From signing up to your first day and beyond, we are with you the whole way.</p>
+    </div>
+    <ol class="timeline">
+      <li class="reveal"><span class="t-num">1</span><div><h3>Create your profile</h3><p>Tell us about yourself: your skills, interests, personality and what you want from your career.</p></div></li>
+      <li class="reveal"><span class="t-num">2</span><div><h3>Complete the Readiness Programme</h3><p>9 bite-sized modules covering CVs, interviews, workplace skills, digital skills and more.</p></div></li>
+      <li class="reveal"><span class="t-num">3</span><div><h3>Get matched</h3><p>We find roles that suit you, and explain in plain English why each one is a good fit.</p></div></li>
+      <li class="reveal"><span class="t-num">4</span><div><h3>Apply &amp; interview</h3><p>Prepared and confident, you apply to your matches and walk into interviews ready.</p></div></li>
+      <li class="reveal"><span class="t-num">5</span><div><h3>Succeed &amp; grow</h3><p>Start your apprenticeship with mentor support, progress tracking and pathways to Level 4, 5 and 6 qualifications.</p></div></li>
+    </ol>
+    <a href="quiz.html" class="quiz-promo reveal">
+      <span class="quiz-promo-emoji">🧭</span>
+      <div>
+        <strong>Not sure which trade suits you?</strong>
+        <span>Take our 2-minute career vibe quiz and find out.</span>
+      </div>
+      <span class="quiz-promo-go">Take the quiz →</span>
+    </a>
+  </section>
+
+  <section class="home-section dark">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why ApprenticeLinks</span>
+      <h2>Built for people starting out</h2>
+    </div>
+    <div class="icon-grid">
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <h3>Personal matching</h3>
+        <p>No spray-and-pray applications. Get matched to roles where you will actually succeed.</p>
+      </div>
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg></div>
+        <h3>Real preparation</h3>
+        <p>Build confidence with readiness modules before you ever step into an interview.</p>
+      </div>
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Mentor support</h3>
+        <p>Someone in your corner throughout your apprenticeship, not just until you are hired.</p>
+      </div>
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>Total transparency</h3>
+        <p>See exactly why you have been matched to each role.</p>
+      </div>
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M18 7a7 7 0 1 0 0 10"/><path d="M4 10h10"/><path d="M4 14h10"/></svg></div>
+        <h3>Completely free</h3>
+        <p>Candidates use ApprenticeLinks for free. Always.</p>
+      </div>
+      <div class="icon-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg></div>
+        <h3>Room to grow</h3>
+        <p>Clear pathways to higher qualifications and a long-term career.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section light">
+    <div class="split">
+      <div class="split-img reveal"><img src="images/mentor.jpg" alt="A mentor helping a young apprentice at a laptop" loading="lazy"></div>
+      <div class="split-text reveal">
+        <span class="eyebrow dark">Readiness Programme</span>
+        <h2>We don't just match you, we prepare you</h2>
+        <p>Nine modules, around 20 hours in total, done at your own pace. Most people finish in 4 to 8 weeks.</p>
+        <ul class="check-list">
+          <li>Apprenticeship 101 &amp; employer research</li>
+          <li>CV writing &amp; interview prep</li>
+          <li>Communication &amp; workplace readiness</li>
+          <li>Digital skills &amp; personal branding</li>
+          <li>Soft skills assessment</li>
+        </ul>
+        <a href="readiness-programme.html" class="btn">See all 9 modules →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band" style="--cta-top: #faf7f2">
+    <div class="cta-inner reveal">
+      <div>
+        <h2>Ready to find your fit?</h2>
+        <p>Sign up free and start your journey today.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-dark">Get started free</a>
+        <a href="quiz.html" class="btn btn-ghost">Take the quiz</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-mark">A</span>ApprenticeLinks</a>
+        <p>Connecting potential to opportunity across Ireland.</p>
+      </div>
+      <div>
+        <h4>Candidates</h4>
+        <a href="for-candidates.html">Find an apprenticeship</a>
+        <a href="quiz.html">Take the career quiz</a>
+        <a href="readiness-programme.html">Readiness Programme</a>
+        <a href="how-it-works.html">How it works</a>
+      </div>
+      <div>
+        <h4>Employers &amp; Colleges</h4>
+        <a href="for-employers.html">Hire apprentices</a>
+        <a href="why-hire-apprentices.html">Why hire apprentices</a>
+        <a href="for-colleges.html">For colleges</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2026 ApprenticeLinks. Proudly Irish 🇮🇪</p>
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>
