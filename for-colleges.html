@@ -5,95 +5,140 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="For Education Providers - ApprenticeLinks partnerships with ETBs and colleges">
   <title>For Education Providers - ApprenticeLinks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header>
-    <div class="logo">🎓 ApprenticeLinks</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="for-candidates.html">For Candidates</a>
-      <a href="for-employers.html">For Employers</a>
-      <a href="for-colleges.html">For Colleges</a>
-      <a href="how-it-works.html">How It Works</a>
-      <a href="readiness-programme.html">Readiness Programme</a>
-      <a href="why-hire-apprentices.html">Why Hire Apprentices</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
-    </nav>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo" aria-label="ApprenticeLinks home">
+        <span class="logo-mark" aria-hidden="true">🎓</span>
+        <span>Apprentice<span class="accent">Links</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav class="main-nav" id="main-nav">
+        <a href="for-candidates.html">Candidates</a>
+        <a href="for-employers.html">Employers</a>
+        <a href="for-colleges.html" class="active" aria-current="page">Colleges</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html#quiz" class="btn btn-orange btn-sm">Get Started</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="section">
-    <h2>For Education Providers & ETBs</h2>
-    
-    <div class="card">
-      <h3>Partner with ApprenticeLinks</h3>
-      <p>ETBs, colleges, and training providers play a critical role in apprenticeship success. ApprenticeLinks partners with education providers to identify candidate readiness gaps, prepare learners, and track outcomes.</p>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Education partners</span>
+      <h1>For Education Providers & ETBs</h1>
+      <p>Prepare learners, spot readiness gaps early and track outcomes across every placement.</p>
+        <div class="button-container"><a href="contact.html" class="btn btn-orange">Partner with us</a></div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>For ETBs (Education & Training Boards)</h3>
-      <p><strong>Challenge:</strong> Candidates arrive unprepared. Placements fail. Completion rates suffer. Data is fragmented across systems.</p>
-      <p style="margin-top: 15px;"><strong>Solution:</strong> ApprenticeLinks integrates with SOLAS and ETB systems to identify at-risk candidates early, provide readiness support, and track outcomes in real time.</p>
-      <p style="margin-top: 15px;"><strong>Benefits:</strong></p>
-      <ul style="margin-left: 20px; margin-top: 10px;">
-        <li>Early identification of candidate readiness gaps</li>
-        <li>Automated readiness programme access for your learners</li>
-        <li>Real-time outcome tracking across all placements</li>
-        <li>Data-driven insights on programme effectiveness</li>
-        <li>Reduced early termination rates</li>
-        <li>API access for system integration</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>For Colleges & Training Providers</h3>
-      <p><strong>Challenge:</strong> How do you ensure apprentices are prepared for workplace success?</p>
-      <p style="margin-top: 15px;"><strong>Solution:</strong> Embed ApprenticeLinks readiness modules into your programme. Use our assessments to identify strengths and gaps. Track outcomes post-placement.</p>
-      <p style="margin-top: 15px;"><strong>Benefits:</strong></p>
-      <ul style="margin-left: 20px; margin-top: 10px;">
-        <li>Free readiness content for your candidates</li>
-        <li>Personality and learning style assessments</li>
-        <li>Outcome tracking to measure programme success</li>
-        <li>White-label integration available</li>
-        <li>Partnership and co-branding opportunities</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Integration Features</h3>
-      <p><strong>Data Integration:</strong> Connect your learner management system (LMS) to ApprenticeLinks via API. Candidates are automatically enrolled in readiness modules upon intake.</p>
-      <p style="margin-top: 10px;"><strong>Outcome Tracking:</strong> Monitor completion rates, workplace performance, and long-term retention for every apprentice. Compare outcomes by programme, sector, and employer.</p>
-      <p style="margin-top: 10px;"><strong>White-Label:</strong> Customize the platform with your branding, logo, and programme-specific content.</p>
-      <p style="margin-top: 10px;"><strong>Analytics Dashboard:</strong> View real-time programme metrics, readiness scores, and outcome predictions.</p>
-    </div>
-
-    <div class="card">
-      <h3>Why Partner with ApprenticeLinks?</h3>
-      <ul style="margin-left: 20px; margin-top: 10px;">
-        <li>Improve placement success and completion rates</li>
-        <li>Identify and support at-risk candidates early</li>
-        <li>Access free, comprehensive readiness content for learners</li>
-        <li>Track outcomes across all your programmes in one system</li>
-        <li>Increase competitive advantage in the apprenticeship market</li>
-        <li>Gain data-driven insights to improve your offering</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Interested in Partnering?</h3>
-      <p>We're actively seeking partnerships with ETBs and education providers. Early partners will have input into platform development and flexible commercial terms.</p>
-      <p style="margin-top: 15px;">Contact: <a href="mailto:colleges@apprenticelinks.ie">colleges@apprenticelinks.ie</a></p>
-    </div>
-
-    <div class="button-container" style="margin-top: 40px;">
-      <a href="contact.html" class="btn">Get in Touch</a>
+  <section class="page-body">
+    <div class="container">
+      <div class="page-content">
+        <div class="card highlight">
+        <h3>Partner with ApprenticeLinks</h3>
+        <p>ETBs, colleges, and training providers play a critical role in apprenticeship success. ApprenticeLinks partners with education providers to identify candidate readiness gaps, prepare learners, and track outcomes.</p>
+        </div>
+        <div class="card">
+        <h3>For ETBs (Education & Training Boards)</h3>
+        <p><strong>Challenge:</strong> Candidates arrive unprepared. Placements fail. Completion rates suffer. Data is fragmented across systems.</p>
+        <p><strong>Solution:</strong> ApprenticeLinks integrates with SOLAS and ETB systems to identify at-risk candidates early, provide readiness support, and track outcomes in real time.</p>
+        <p><strong>Benefits:</strong></p>
+        <ul>
+          <li>Early identification of candidate readiness gaps</li>
+          <li>Automated readiness programme access for your learners</li>
+          <li>Real-time outcome tracking across all placements</li>
+          <li>Data-driven insights on programme effectiveness</li>
+          <li>Reduced early termination rates</li>
+          <li>API access for system integration</li>
+        </ul>
+        </div>
+        <div class="card">
+        <h3>For Colleges & Training Providers</h3>
+        <p><strong>Challenge:</strong> How do you ensure apprentices are prepared for workplace success?</p>
+        <p><strong>Solution:</strong> Embed ApprenticeLinks readiness modules into your programme. Use our assessments to identify strengths and gaps. Track outcomes post-placement.</p>
+        <p><strong>Benefits:</strong></p>
+        <ul>
+          <li>Free readiness content for your candidates</li>
+          <li>Personality and learning style assessments</li>
+          <li>Outcome tracking to measure programme success</li>
+          <li>White-label integration available</li>
+          <li>Partnership and co-branding opportunities</li>
+        </ul>
+        </div>
+        <div class="card">
+        <h3>Integration Features</h3>
+        <p><strong>Data Integration:</strong> Connect your learner management system (LMS) to ApprenticeLinks via API. Candidates are automatically enrolled in readiness modules upon intake.</p>
+        <p><strong>Outcome Tracking:</strong> Monitor completion rates, workplace performance, and long-term retention for every apprentice. Compare outcomes by programme, sector, and employer.</p>
+        <p><strong>White-Label:</strong> Customize the platform with your branding, logo, and programme-specific content.</p>
+        <p><strong>Analytics Dashboard:</strong> View real-time programme metrics, readiness scores, and outcome predictions.</p>
+        </div>
+        <div class="card">
+        <h3>Why Partner with ApprenticeLinks?</h3>
+        <ul>
+          <li>Improve placement success and completion rates</li>
+          <li>Identify and support at-risk candidates early</li>
+          <li>Access free, comprehensive readiness content for learners</li>
+          <li>Track outcomes across all your programmes in one system</li>
+          <li>Increase competitive advantage in the apprenticeship market</li>
+          <li>Gain data-driven insights to improve your offering</li>
+        </ul>
+        </div>
+        <div class="card">
+        <h3>Interested in Partnering?</h3>
+        <p>We're actively seeking partnerships with ETBs and education providers. Early partners will have input into platform development and flexible commercial terms.</p>
+        <p>Contact: <a href="mailto:colleges@apprenticelinks.ie">colleges@apprenticelinks.ie</a></p>
+        </div>
+        <div class="page-actions">
+          <a href="contact.html" class="btn btn-orange">Get in Touch</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2027 ApprenticeLinks. Connecting potential to opportunity across Ireland.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo"><span class="logo-mark" aria-hidden="true">🎓</span><span>Apprentice<span class="accent">Links</span></span></div>
+          <p>Connecting potential to opportunity across Ireland.</p>
+          <p style="margin-top:10px;color:var(--orange-light);font-weight:600;">apprenticelink.ie</p>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <a href="for-candidates.html">For Candidates</a>
+          <a href="for-employers.html">For Employers</a>
+          <a href="for-colleges.html">For Colleges</a>
+          <a href="how-it-works.html">How It Works</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="readiness-programme.html">Readiness Programme</a>
+          <a href="why-hire-apprentices.html">Why Hire Apprentices</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="contact.html">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> ApprenticeLinks. All rights reserved.</span>
+        <span>Made in Ireland 🇮🇪</span>
+      </div>
+    </div>
   </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>

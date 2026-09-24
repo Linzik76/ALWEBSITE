@@ -5,75 +5,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Contact ApprenticeLinks - Get in touch with our team">
   <title>Contact - ApprenticeLinks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header>
-    <div class="logo">🎓 ApprenticeLinks</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="for-candidates.html">For Candidates</a>
-      <a href="for-employers.html">For Employers</a>
-      <a href="for-colleges.html">For Colleges</a>
-      <a href="how-it-works.html">How It Works</a>
-      <a href="readiness-programme.html">Readiness Programme</a>
-      <a href="why-hire-apprentices.html">Why Hire Apprentices</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
-    </nav>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo" aria-label="ApprenticeLinks home">
+        <span class="logo-mark" aria-hidden="true">🎓</span>
+        <span>Apprentice<span class="accent">Links</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav class="main-nav" id="main-nav">
+        <a href="for-candidates.html">Candidates</a>
+        <a href="for-employers.html">Employers</a>
+        <a href="for-colleges.html">Colleges</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="active" aria-current="page">Contact</a>
+        <a href="index.html#quiz" class="btn btn-orange btn-sm">Get Started</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="section">
-    <h2>Get In Touch</h2>
-    
-    <div class="card">
-      <h3>Contact ApprenticeLinks</h3>
-      <p>Have questions? Want to partner with us? Interested in joining our team? We'd love to hear from you.</p>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h1>Get in Touch</h1>
+      <p>Questions, partnerships or just want to say hello? We'd love to hear from you.</p>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Email</h3>
-      <p><a href="mailto:hello@apprenticelinks.ie">hello@apprenticelinks.ie</a></p>
-      <p style="margin-top: 10px; color: #999; font-size: 14px;">General inquiries and feedback</p>
-    </div>
-
-    <div class="card">
-      <h3>For Employers</h3>
-      <p><a href="mailto:employers@apprenticelinks.ie">employers@apprenticelinks.ie</a></p>
-      <p style="margin-top: 10px; color: #999; font-size: 14px;">Hire apprentices, partnerships, and business inquiries</p>
-    </div>
-
-    <div class="card">
-      <h3>For Candidates</h3>
-      <p><a href="mailto:support@apprenticelinks.ie">support@apprenticelinks.ie</a></p>
-      <p style="margin-top: 10px; color: #999; font-size: 14px;">Account support, technical issues, and questions</p>
-    </div>
-
-    <div class="card">
-      <h3>For Educators & ETBs</h3>
-      <p><a href="mailto:colleges@apprenticelinks.ie">colleges@apprenticelinks.ie</a></p>
-      <p style="margin-top: 10px; color: #999; font-size: 14px;">SOLAS, ETBs, and education provider partnerships</p>
-    </div>
-
-    <div class="card">
-      <h3>Response Time</h3>
-      <p>We aim to respond to all inquiries within 24 business hours. During manual pilot phase, we may take longer due to high volume—thank you for your patience.</p>
-    </div>
-
-    <div class="card">
-      <h3>Location</h3>
-      <p>Ireland</p>
-      <p style="margin-top: 10px; color: #999; font-size: 14px;">Currently building and operating across Ireland. UK expansion coming 2028.</p>
-    </div>
-
-    <div class="button-container" style="margin-top: 40px;">
-      <a href="index.html" class="btn">Back to Home</a>
+  <section class="page-body">
+    <div class="container">
+      <div class="page-content">
+        <div class="card highlight">
+        <h3>Contact ApprenticeLinks</h3>
+        <p>Have questions? Want to partner with us? Interested in joining our team? We'd love to hear from you.</p>
+        </div>
+        <div class="card-grid">
+          <div class="card contact-card">
+          <h3>Email</h3>
+          <p class="email"><a href="mailto:hello@apprenticelinks.ie">hello@apprenticelinks.ie</a></p>
+          <p class="muted">General inquiries and feedback</p>
+          </div>
+          <div class="card contact-card">
+          <h3>For Employers</h3>
+          <p class="email"><a href="mailto:employers@apprenticelinks.ie">employers@apprenticelinks.ie</a></p>
+          <p class="muted">Hire apprentices, partnerships, and business inquiries</p>
+          </div>
+          <div class="card contact-card">
+          <h3>For Candidates</h3>
+          <p class="email"><a href="mailto:support@apprenticelinks.ie">support@apprenticelinks.ie</a></p>
+          <p class="muted">Account support, technical issues, and questions</p>
+          </div>
+          <div class="card contact-card">
+          <h3>For Educators & ETBs</h3>
+          <p class="email"><a href="mailto:colleges@apprenticelinks.ie">colleges@apprenticelinks.ie</a></p>
+          <p class="muted">SOLAS, ETBs, and education provider partnerships</p>
+          </div>
+        </div>
+        <div class="card">
+        <h3>Response Time</h3>
+        <p>We aim to respond to all inquiries within 24 business hours. During manual pilot phase, we may take longer due to high volume—thank you for your patience.</p>
+        </div>
+        <div class="card">
+        <h3>Location</h3>
+        <p>Ireland</p>
+        <p class="muted">Currently building and operating across Ireland. UK expansion coming 2028.</p>
+        </div>
+        <div class="page-actions">
+          <a href="index.html" class="btn btn-orange">Back to Home</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2027 ApprenticeLinks. Connecting potential to opportunity across Ireland.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo"><span class="logo-mark" aria-hidden="true">🎓</span><span>Apprentice<span class="accent">Links</span></span></div>
+          <p>Connecting potential to opportunity across Ireland.</p>
+          <p style="margin-top:10px;color:var(--orange-light);font-weight:600;">apprenticelink.ie</p>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <a href="for-candidates.html">For Candidates</a>
+          <a href="for-employers.html">For Employers</a>
+          <a href="for-colleges.html">For Colleges</a>
+          <a href="how-it-works.html">How It Works</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="readiness-programme.html">Readiness Programme</a>
+          <a href="why-hire-apprentices.html">Why Hire Apprentices</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="contact.html">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> ApprenticeLinks. All rights reserved.</span>
+        <span>Made in Ireland 🇮🇪</span>
+      </div>
+    </div>
   </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>

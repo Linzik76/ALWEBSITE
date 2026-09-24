@@ -5,113 +5,141 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="FAQs - Frequently asked questions about ApprenticeLinks">
   <title>FAQ - ApprenticeLinks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <header>
-    <div class="logo">🎓 ApprenticeLinks</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="for-candidates.html">For Candidates</a>
-      <a href="for-employers.html">For Employers</a>
-      <a href="for-colleges.html">For Colleges</a>
-      <a href="how-it-works.html">How It Works</a>
-      <a href="readiness-programme.html">Readiness Programme</a>
-      <a href="why-hire-apprentices.html">Why Hire Apprentices</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
-    </nav>
+    <div class="container nav-bar">
+      <a href="index.html" class="logo" aria-label="ApprenticeLinks home">
+        <span class="logo-mark" aria-hidden="true">🎓</span>
+        <span>Apprentice<span class="accent">Links</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav class="main-nav" id="main-nav">
+        <a href="for-candidates.html">Candidates</a>
+        <a href="for-employers.html">Employers</a>
+        <a href="for-colleges.html">Colleges</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="faq.html" class="active" aria-current="page">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html#quiz" class="btn btn-orange btn-sm">Get Started</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="section">
-    <h2>Frequently Asked Questions</h2>
-    
-    <div class="card">
-      <h3>For Candidates</h3>
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Help</span>
+      <h1>Frequently Asked Questions</h1>
+      <p>Everything candidates, employers and partners ask us, answered.</p>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>How does the AI matching work?</h3>
-      <p>Our matching engine analyzes 30 candidate features (skills, personality, learning style, career goals, etc.) and 12 vacancy features to predict placement success. The model uses XGBoost and explains each match in plain English so you understand why you're matched to a role.</p>
-    </div>
-
-    <div class="card">
-      <h3>Is ApprenticeLinks free for candidates?</h3>
-      <p>Yes, completely free. You can create a profile, complete the readiness programme, and access matched opportunities without any cost.</p>
-    </div>
-
-    <div class="card">
-      <h3>How long does the readiness programme take?</h3>
-      <p>The full programme is approximately 20-25 hours. You can complete it at your own pace—most candidates finish in 4-8 weeks.</p>
-    </div>
-
-    <div class="card">
-      <h3>What if I don't match with any roles?</h3>
-      <p>If you don't have immediate matches, we'll recommend readiness modules to improve your profile, connect you with mentors, and notify you when matching roles become available.</p>
-    </div>
-
-    <div class="card">
-      <h3>Can I apply to roles manually if I don't want a match?</h3>
-      <p>Yes. While we recommend matches, you can also browse and apply directly to vacancies posted on the platform.</p>
-    </div>
-
-    <div class="card">
-      <h3 style="margin-top: 30px;">For Employers</h3>
-    </div>
-
-    <div class="card">
-      <h3>How much does ApprenticeLinks cost?</h3>
-      <p>Pricing depends on your plan. Starter (small employers): €20-50/month. Growth: €100-300/month. Enterprise: custom pricing. All plans include access to the matching algorithm and candidate profiles.</p>
-    </div>
-
-    <div class="card">
-      <h3>How does the matching work for employers?</h3>
-      <p>When you post a vacancy, our AI analyzes your role, company, and culture, then identifies pre-assessed candidates with the highest predicted success probability. You see the top matches with explanations.</p>
-    </div>
-
-    <div class="card">
-      <h3>How many candidates will I see for a vacancy?</h3>
-      <p>You'll see 5-20 top matches, depending on vacancy and candidate availability. This is intentionally selective—we want quality over quantity.</p>
-    </div>
-
-    <div class="card">
-      <h3>Can I still use traditional recruitment alongside ApprenticeLinks?</h3>
-      <p>Absolutely. ApprenticeLinks is designed to complement your existing processes, not replace them. Use our matches and still accept direct applications if you prefer.</p>
-    </div>
-
-    <div class="card">
-      <h3>What data do you collect about my company?</h3>
-      <p>We collect role descriptions, company info, and outcomes data (placements, completions, retention). All data is securely stored and never shared with third parties.</p>
-    </div>
-
-    <div class="card">
-      <h3 style="margin-top: 30px;">General</h3>
-    </div>
-
-    <div class="card">
-      <h3>When is ApprenticeLinks launching?</h3>
-      <p>We're currently in Phase 0 (manual pilot). Phase 1 MVP launches Q1 2027, with the full AI matching engine (Phase 3) live by Q4 2027.</p>
-    </div>
-
-    <div class="card">
-      <h3>Will ApprenticeLinks expand to the UK?</h3>
-      <p>Yes. We're launching in Ireland first (2027), then expanding to the UK (2028). The apprenticeship systems are similar, and the same matching approach applies.</p>
-    </div>
-
-    <div class="card">
-      <h3>Is my data secure?</h3>
-      <p>Yes. We use enterprise-grade encryption, comply with GDPR and Irish data protection laws, and undergo regular security audits. Candidate data is never shared with employers without consent.</p>
-    </div>
-
-    <div class="card">
-      <h3>How do I contact support?</h3>
-      <p>Email: <a href="mailto:support@apprenticelinks.ie">support@apprenticelinks.ie</a>. Or use the contact form on our website. We aim to respond within 24 hours.</p>
+  <section class="page-body">
+    <div class="container">
+      <div class="page-content">
+        <h2 class="group-title">For Candidates</h2>
+        <details class="faq">
+          <summary>How does the AI matching work?</summary>
+          <div class="answer"><p>Our matching engine analyzes 30 candidate features (skills, personality, learning style, career goals, etc.) and 12 vacancy features to predict placement success. The model uses XGBoost and explains each match in plain English so you understand why you're matched to a role.</p></div>
+        </details>
+        <details class="faq">
+          <summary>Is ApprenticeLinks free for candidates?</summary>
+          <div class="answer"><p>Yes, completely free. You can create a profile, complete the readiness programme, and access matched opportunities without any cost.</p></div>
+        </details>
+        <details class="faq">
+          <summary>How long does the readiness programme take?</summary>
+          <div class="answer"><p>The full programme is approximately 20-25 hours. You can complete it at your own pace—most candidates finish in 4-8 weeks.</p></div>
+        </details>
+        <details class="faq">
+          <summary>What if I don't match with any roles?</summary>
+          <div class="answer"><p>If you don't have immediate matches, we'll recommend readiness modules to improve your profile, connect you with mentors, and notify you when matching roles become available.</p></div>
+        </details>
+        <details class="faq">
+          <summary>Can I apply to roles manually if I don't want a match?</summary>
+          <div class="answer"><p>Yes. While we recommend matches, you can also browse and apply directly to vacancies posted on the platform.</p></div>
+        </details>
+        <h2 class="group-title">For Employers</h2>
+        <details class="faq">
+          <summary>How much does ApprenticeLinks cost?</summary>
+          <div class="answer"><p>Pricing depends on your plan. Starter (small employers): €20-50/month. Growth: €100-300/month. Enterprise: custom pricing. All plans include access to the matching algorithm and candidate profiles.</p></div>
+        </details>
+        <details class="faq">
+          <summary>How does the matching work for employers?</summary>
+          <div class="answer"><p>When you post a vacancy, our AI analyzes your role, company, and culture, then identifies pre-assessed candidates with the highest predicted success probability. You see the top matches with explanations.</p></div>
+        </details>
+        <details class="faq">
+          <summary>How many candidates will I see for a vacancy?</summary>
+          <div class="answer"><p>You'll see 5-20 top matches, depending on vacancy and candidate availability. This is intentionally selective—we want quality over quantity.</p></div>
+        </details>
+        <details class="faq">
+          <summary>Can I still use traditional recruitment alongside ApprenticeLinks?</summary>
+          <div class="answer"><p>Absolutely. ApprenticeLinks is designed to complement your existing processes, not replace them. Use our matches and still accept direct applications if you prefer.</p></div>
+        </details>
+        <details class="faq">
+          <summary>What data do you collect about my company?</summary>
+          <div class="answer"><p>We collect role descriptions, company info, and outcomes data (placements, completions, retention). All data is securely stored and never shared with third parties.</p></div>
+        </details>
+        <h2 class="group-title">General</h2>
+        <details class="faq">
+          <summary>When is ApprenticeLinks launching?</summary>
+          <div class="answer"><p>We're currently in Phase 0 (manual pilot). Phase 1 MVP launches Q1 2027, with the full AI matching engine (Phase 3) live by Q4 2027.</p></div>
+        </details>
+        <details class="faq">
+          <summary>Will ApprenticeLinks expand to the UK?</summary>
+          <div class="answer"><p>Yes. We're launching in Ireland first (2027), then expanding to the UK (2028). The apprenticeship systems are similar, and the same matching approach applies.</p></div>
+        </details>
+        <details class="faq">
+          <summary>Is my data secure?</summary>
+          <div class="answer"><p>Yes. We use enterprise-grade encryption, comply with GDPR and Irish data protection laws, and undergo regular security audits. Candidate data is never shared with employers without consent.</p></div>
+        </details>
+        <details class="faq">
+          <summary>How do I contact support?</summary>
+          <div class="answer"><p>Email: <a href="mailto:support@apprenticelinks.ie">support@apprenticelinks.ie</a>. Or use the contact form on our website. We aim to respond within 24 hours.</p></div>
+        </details>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2027 ApprenticeLinks. Connecting potential to opportunity across Ireland.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo"><span class="logo-mark" aria-hidden="true">🎓</span><span>Apprentice<span class="accent">Links</span></span></div>
+          <p>Connecting potential to opportunity across Ireland.</p>
+          <p style="margin-top:10px;color:var(--orange-light);font-weight:600;">apprenticelink.ie</p>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <a href="for-candidates.html">For Candidates</a>
+          <a href="for-employers.html">For Employers</a>
+          <a href="for-colleges.html">For Colleges</a>
+          <a href="how-it-works.html">How It Works</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="readiness-programme.html">Readiness Programme</a>
+          <a href="why-hire-apprentices.html">Why Hire Apprentices</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="contact.html">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> ApprenticeLinks. All rights reserved.</span>
+        <span>Made in Ireland 🇮🇪</span>
+      </div>
+    </div>
   </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>
