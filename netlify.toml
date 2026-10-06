@@ -1,0 +1,9 @@
+# Netlify settings: plain static site, no build step needed.
+[build]
+  publish = "."
+
+# Let browsers cache photos for a week so pages load faster on repeat visits
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
